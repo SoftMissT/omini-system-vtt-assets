@@ -25,17 +25,15 @@
   },
   "packs": [
     {
-        "name": "omini-macros",
-        "label": "Omini Anime Macros",
-        "path": "packs/omini-macros",
-        "type": "Macro"
+      "name": "omini-macros",
+      "label": "Omini Anime Macros",
+      "path": "packs/omini-macros",
+      "type": "Macro"
     }
   ],
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "url": "https://github.com/SoftMissT/omini-system-vtt",
-  "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt/main/module.json",
-  "download": "https://github.com/SoftMissT/omini-system-vtt/archive/refs/heads/main.zip",
+  "esmodules": ["scripts/module.js"],
+  "url": "https://github.com/SoftMissT/omini-system-vtt-assets",
+  "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt-assets/main/module.json",
+  "download": "https://github.com/SoftMissT/omini-system-vtt-assets/archive/refs/heads/main.zip",
   "license": "LICENSE"
 }
