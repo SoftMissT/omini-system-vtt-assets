@@ -1,13 +1,14 @@
 {
   "id": "omini-system-assets",
   "title": "Omini System – Asset Library",
-  "description": "Biblioteca de assets visuais para o Omini System.",
+  "description": "Biblioteca de assets visuais para o Omini System (compatível com Foundry VTT v12 e v13+).",
   "version": "1.0.0",
   "authors": [
-    { "name": "SoftMissT" }
+    {
+      "name": "SoftMissT"
+    }
   ],
-  "minimumCoreVersion": "13",
-  "compatibleCoreVersion": "13",
+  "minimumCoreVersion": "12",
   "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt-assets/main/module.json",
   "download": "https://github.com/SoftMissT/omini-system-vtt-assets/archive/refs/heads/main.zip"
 }
