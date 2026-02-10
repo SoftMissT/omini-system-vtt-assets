@@ -1,0 +1,70 @@
+<div class="omni-hud synthesis-core manhwa-theme">
+    <!-- BACKGROUND & FX -->
+    <div class="background-grid"></div>
+    <div class="particles-container"></div>
+
+    <!-- HEADER -->
+    <header class="hud-header">
+        <h1><i class="fas fa-dna"></i> ABSOLUTE SYNTHESIS</h1>
+        <div class="window-controls">
+            <a data-action="close" class="close-button"><i class="fas fa-times"></i></a>
+        </div>
+    </header>
+
+    <!-- MAIN FUSION AREA -->
+    <main class="fusion-stage">
+        
+        <!-- LEFT SLOT -->
+        <div class="slot-container left" data-slot="slot1">
+            <div class="slot-hex {{#if slots.left}}filled{{/if}}">
+                {{#if slots.left}}
+                <img src="{{slots.left.img}}" data-tooltip="{{slots.left.name}}">
+                <div class="rarity-glow {{slots.left.system.rarity}}"></div>
+                {{else}}
+                <i class="fas fa-plus empty-icon"></i>
+                {{/if}}
+            </div>
+            <label>MATERIAL A</label>
+        </div>
+
+        <!-- CENTER: FUSION CORE -->
+        <div class="core-connector">
+            <div class="energy-stream left-stream"></div>
+            <button class="fusion-btn {{#unless canFuse}}disabled{{/unless}}" data-action="processFusion">
+                <span>SYNTHESIZE</span>
+                <i class="fas fa-atom fa-spin-pulse"></i>
+            </button>
+            <div class="energy-stream right-stream"></div>
+        </div>
+
+        <!-- RIGHT SLOT -->
+        <div class="slot-container right" data-slot="slot2">
+            <div class="slot-hex {{#if slots.right}}filled{{/if}}">
+                {{#if slots.right}}
+                <img src="{{slots.right.img}}" data-tooltip="{{slots.right.name}}">
+                <div class="rarity-glow {{slots.right.system.rarity}}"></div>
+                {{else}}
+                <i class="fas fa-plus empty-icon"></i>
+                {{/if}}
+            </div>
+            <label>MATERIAL B</label>
+        </div>
+
+    </main>
+
+    <!-- FOOTER: HISTORY -->
+    <footer class="fusion-history">
+        <h3>SYSTEM LOG</h3>
+        <ul class="log-list">
+            {{#each history}}
+            <li class="log-entry">
+                <span class="timestamp">[{{this.time}}]</span>
+                <span class="result {{this.resultType}}">{{this.message}}</span>
+            </li>
+            {{else}}
+            <li class="empty-log">Processing system idle...</li>
+            {{/each}}
+        </ul>
+        <button class="clear-btn" data-action="clearSlots">RESET SLOTS</button>
+    </footer>
+</div>

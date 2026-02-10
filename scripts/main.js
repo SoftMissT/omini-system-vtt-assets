@@ -3,12 +3,32 @@
  * Main Entry Point
  */
 
-Hooks.once('init', async function() {
-    console.log('Omini System Assets | Initializing...');
+import { SynthesisCore } from "./huds/synthesis-core.js";
+
+Hooks.once("init", () => {
+    console.log("🌌 OMNI-SYSTEM | Initializing...");
+    
+    // Register settings, etc.
 });
 
-Hooks.once('ready', async function() {
-    console.log('Omini System Assets | Ready');
+Hooks.once("ready", () => {
+    console.log("🌌 OMNI-SYSTEM | Ready.");
+
+    // TEST BUTTON (Temporary) - Adds a button to the Token Layer controls
+    Hooks.on("getSceneControlButtons", (controls) => {
+        const tokenControls = controls.find(c => c.name === "token");
+        if (tokenControls) {
+            tokenControls.tools.push({
+                name: "omni-synthesis",
+                title: "Open Synthesis Core",
+                icon: "fas fa-dna",
+                button: true,
+                onClick: () => {
+                    new SynthesisCore().render(true);
+                }
+            });
+        }
+    });
 });
 
 /**

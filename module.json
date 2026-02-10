@@ -29,9 +29,32 @@
       "label": "Omini Anime Macros",
       "path": "packs/omini-macros",
       "type": "Macro"
+    },
+    {
+      "name": "omini-skills",
+      "label": "Omini Anime Skills",
+      "path": "packs/omini-skills",
+      "type": "Item"
+    },
+    {
+      "name": "omini-items",
+      "label": "Omini Anime Items",
+      "path": "packs/omini-items",
+      "type": "Item"
     }
   ],
-  "esmodules": ["scripts/module.js"],
+  "esmodules": [
+    "scripts/core/omni-core.js",
+    "scripts/core/asset-manager.js",
+    "scripts/core/gemini-service.js",
+    "scripts/huds/synthesis-core.js",
+    "scripts/huds/nexus-exchange.js",
+    "scripts/huds/power-ark.js",
+    "scripts/huds/void-vault.js",
+    "scripts/huds/chronicle-engine.js",
+    "scripts/sheets/origin-matrix.js",
+    "scripts/main.js"
+  ],
   "url": "https://github.com/SoftMissT/omini-system-vtt-assets",
   "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt-assets/main/module.json",
   "download": "https://github.com/SoftMissT/omini-system-vtt-assets/archive/refs/heads/main.zip",
