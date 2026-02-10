@@ -1,5 +1,6 @@
 {
   "id": "omini-system-assets",
+  "type": "module",
   "title": "Omini System – Asset Library",
   "description": "Biblioteca de assets visuais para o Omini System (compatível com Foundry VTT v12 e v13+).",
   "version": "1.0.0",
