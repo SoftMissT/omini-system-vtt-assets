@@ -32,7 +32,7 @@
     }
   ],
   "esmodules": [
-    "scripts/main.js"
+    "scripts/module.js"
   ],
   "url": "https://github.com/SoftMissT/omini-system-vtt",
   "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt/main/module.json",
