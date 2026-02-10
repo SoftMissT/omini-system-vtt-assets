@@ -1,15 +1,41 @@
 {
-  "id": "omini-system-assets",
-  "type": "module",
-  "title": "Omini System – Asset Library",
-  "description": "Biblioteca de assets visuais para o Omini System (compatível com Foundry VTT v12 e v13+).",
+  "id": "omini-system-vtt",
+  "title": "Omini System VTT",
+  "description": "Sistema de animes 100% gratuito focado em mundos como SAO e Manhwas. Criado por SoftMissT com apoio de IAs (Claude, Gemini, Midjourney, Obsidian, ChatGPT, Manus AI).",
   "version": "1.0.0",
   "authors": [
     {
       "name": "SoftMissT"
     }
   ],
-  "minimumCoreVersion": "12",
-  "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt-assets/main/module.json",
-  "download": "https://github.com/SoftMissT/omini-system-vtt-assets/archive/refs/heads/main.zip"
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.331",
+    "maximum": "13"
+  },
+  "relationships": {
+    "requires": [],
+    "recommends": [
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "title": "Dice So Nice!"
+      }
+    ]
+  },
+  "packs": [
+    {
+        "name": "omini-macros",
+        "label": "Omini Anime Macros",
+        "path": "packs/omini-macros",
+        "type": "Macro"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "url": "https://github.com/SoftMissT/omini-system-vtt",
+  "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt/main/module.json",
+  "download": "https://github.com/SoftMissT/omini-system-vtt/archive/refs/heads/main.zip",
+  "license": "LICENSE"
 }
