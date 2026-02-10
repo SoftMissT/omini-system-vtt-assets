@@ -1,0 +1,7 @@
+{
+  "_id": "omini_cons_rp999l14",
+  "name": "Pílula de Reset de Build",
+  "tier": "L",
+  "description": "Zera todos os pontos de atributo e skills para redistribuição.",
+  "foundry": { "command": "reset_actor_data" }
+}

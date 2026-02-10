@@ -1,0 +1,9 @@
+{
+  "_id": "omini_hou_fp666e3",
+  "name": "Forja Portátil de Hefesto",
+  "tier": "E",
+  "category": "housing",
+  "subcategory": "utility",
+  "description": "Uma bigorna rúnica em miniatura que se expande. Permite reparar itens em qualquer lugar.",
+  "stats": { "repair_cost": "-50%" }
+}

@@ -1,0 +1,7 @@
+{
+  "_id": "omini_wep_lg555e8",
+  "name": "Manopla do Lag",
+  "tier": "E",
+  "description": "Ao acertar, aumenta o 'Ping' do inimigo. O alvo age com atraso de 1 turno.",
+  "effects": [{ "type": "onHit", "name": "High Ping", "description": "Alvo perde a próxima ação (Stun via Lag)." }]
+}

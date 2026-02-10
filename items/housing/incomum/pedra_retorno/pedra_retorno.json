@@ -1,0 +1,9 @@
+{
+  "_id": "omini_hou_pr444u5",
+  "name": "Pedra de Retorno à Base",
+  "tier": "UC",
+  "category": "housing",
+  "subcategory": "consumable",
+  "description": "Teleporta o usuário para o Núcleo da Guilda após 10 segundos de canalização.",
+  "stats": { "cast_time": "10s", "cooldown": "1h" }
+}

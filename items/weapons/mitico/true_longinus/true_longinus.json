@@ -1,0 +1,8 @@
+{
+  "_id": "omini_wep_tl001m1",
+  "name": "True Longinus",
+  "tier": "M",
+  "description": "A Lança do Destino original. Causa dano absoluto a divindades.",
+  "stats": { "damage": "10d10 + Divine", "penetration": "100%" },
+  "effects": [{ "type": "active", "name": "Truth Seek", "description": "O ataque nunca erra e ignora imunidades." }]
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "omini_skl_exp777l2",
+  "name": "Explosion",
+  "tier": "L",
+  "category": "skills",
+  "subcategory": "magic",
+  "description": "A magia ofensiva suprema. Causa dano massivo em uma área gigantesca, mas exaure o usuário.",
+  "stats": { "cost": "Todo o MP Restante", "damage": "20d10 + MP Gasto" },
+  "effects": [{ "type": "active", "name": "Detonação", "description": "Raio de 20m. Destrói terreno." }]
+}

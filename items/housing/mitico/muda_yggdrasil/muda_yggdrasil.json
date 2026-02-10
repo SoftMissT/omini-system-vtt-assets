@@ -1,0 +1,9 @@
+{
+  "_id": "omini_hou_my999m10",
+  "name": "Muda de Yggdrasil",
+  "tier": "M",
+  "category": "housing",
+  "subcategory": "resource",
+  "description": "Uma pequena árvore sagrada. Gera 1 Fruto de Yggdrasil (Cura Total) a cada 7 dias reais.",
+  "stats": { "production": "1 Fruto/semana" }
+}

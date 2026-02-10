@@ -1,0 +1,8 @@
+{
+  "_id": "omini_arm_bsod444e9",
+  "name": "Escudo Tela Azul (BSOD)",
+  "tier": "E",
+  "description": "Um escudo retangular brilhando com a tela fatal de erro.",
+  "stats": { "ac": 4, "rd": 4 },
+  "effects": [{ "type": "reaction", "name": "Fatal Error", "description": "Atacante sofre 2d8 psíquico ao acertar o escudo." }]
+}

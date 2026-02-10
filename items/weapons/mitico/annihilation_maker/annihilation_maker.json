@@ -1,0 +1,8 @@
+{
+  "_id": "omini_wep_am004m4",
+  "name": "Annihilation Maker",
+  "tier": "M",
+  "description": "A capacidade de criar monstros a partir da sombra do usuário.",
+  "stats": { "summon_limit": "Based on Level" },
+  "effects": [{ "type": "active", "name": "Create Beast", "description": "Invoca um monstro Tier equivalente ao MP gasto." }]
+}

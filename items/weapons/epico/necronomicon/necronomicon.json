@@ -1,0 +1,10 @@
+{
+  "_id": "omini_wep_nc666e8",
+  "name": "Necronomicon (Cópia)",
+  "tier": "E",
+  "category": "weapons",
+  "subcategory": "magic",
+  "type": "tome",
+  "description": "Uma cópia imperfeita do livro dos mortos. Permite reanimar esqueletos básicos.",
+  "stats": { "summon": "Esqueleto Guerreiro (x2)" }
+}

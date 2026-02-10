@@ -1,0 +1,10 @@
+{
+  "_id": "omini_hou_bc777l2",
+  "name": "Bandeira da Conquista",
+  "tier": "L",
+  "category": "housing",
+  "subcategory": "furniture",
+  "description": "Estandarte que inspira moral. Pode ser carregado ou plantado no chão.",
+  "stats": { "aura_radius": "30m" },
+  "effects": [{ "type": "aura", "name": "Moral Elevada", "description": "Imunidade a Medo para aliados num raio de 30m." }]
+}

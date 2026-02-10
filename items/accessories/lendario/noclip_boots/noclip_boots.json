@@ -1,0 +1,7 @@
+{
+  "_id": "omini_acc_nb888l7",
+  "name": "Botas de Noclip (Debug)",
+  "tier": "L",
+  "description": "Permite atravessar paredes e objetos sólidos como se não existissem.",
+  "effects": [{ "type": "passive", "name": "Phasing", "description": "Ignora colisão de muros." }]
+}

@@ -1,0 +1,9 @@
+{
+  "_id": "omini_hou_bd555r4",
+  "name": "Baú Dimensional Compartilhado",
+  "tier": "R",
+  "category": "housing",
+  "subcategory": "storage",
+  "description": "O inventário deste baú é acessível por qualquer outro baú dimensional da mesma guilda.",
+  "stats": { "slots": 50 }
+}

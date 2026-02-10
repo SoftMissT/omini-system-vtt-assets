@@ -1,0 +1,11 @@
+{
+  "_id": "omini_wep_grs999m1",
+  "name": "Grimório do Rei Sábio",
+  "tier": "M",
+  "category": "weapons",
+  "subcategory": "magic",
+  "type": "tome",
+  "description": "Um livro flutuante que contém todas as magias elementais do mundo. Permite 'Multicast'.",
+  "stats": { "base": { "damage": 0, "type": "magic" }, "cast_speed": "+50%" },
+  "effects": [{ "type": "passive", "name": "Omni-Element", "description": "O usuário pode alterar o elemento de qualquer magia à vontade." }]
+}

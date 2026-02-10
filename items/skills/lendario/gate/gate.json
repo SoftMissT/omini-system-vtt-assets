@@ -1,0 +1,9 @@
+{
+  "_id": "omini_skl_gt777l10",
+  "name": "Gate",
+  "tier": "L",
+  "category": "skills",
+  "subcategory": "utility",
+  "description": "Abre um portal para qualquer local conhecido ou marcado.",
+  "stats": { "cost": "200 MP", "capacity": "Ilimitada enquanto aberto" }
+}

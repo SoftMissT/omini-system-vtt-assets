@@ -1,0 +1,9 @@
+{
+  "_id": "omini_hou_qm444u9",
+  "name": "Quadro de Missões Mágico",
+  "tier": "UC",
+  "category": "housing",
+  "subcategory": "furniture",
+  "description": "Atualiza automaticamente com missões diárias do sistema.",
+  "effects": [{ "type": "interactive", "name": "Daily Quests", "description": "Clique para receber uma missão aleatória." }]
+}

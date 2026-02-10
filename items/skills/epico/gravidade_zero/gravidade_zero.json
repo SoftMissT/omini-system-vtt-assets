@@ -1,0 +1,10 @@
+{
+  "_id": "omini_skl_gz666e4",
+  "name": "Gravidade Zero",
+  "tier": "E",
+  "category": "skills",
+  "subcategory": "magic",
+  "description": "Anula a gravidade em uma área, fazendo inimigos flutuarem e perderem o controle.",
+  "stats": { "cost": "50 MP", "duration": "3 rodadas" },
+  "effects": [{ "type": "active", "name": "Levitação Forçada", "description": "Inimigos falham automaticamente em testes de Destreza." }]
+}

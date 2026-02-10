@@ -1,0 +1,9 @@
+{
+  "_id": "omini_wep_gb666m5",
+  "name": "Glitch Blade (Erro de Compilação)",
+  "tier": "M",
+  "category": "weapons",
+  "description": "Uma espada que muda de forma e dano a cada ataque. O sistema não consegue renderizá-la corretamente.",
+  "stats": { "damage": "Varies", "type": "Random" },
+  "effects": [{ "type": "onHit", "name": "RNG Damage", "description": "Rola 1d6 para definir o tipo de dano (Fogo, Gelo, Raio, Void, Force, Psychic)." }]
+}

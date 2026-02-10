@@ -1,0 +1,9 @@
+{
+  "_id": "omini_hou_mt777l6",
+  "name": "Mesa Tática Holomapa",
+  "tier": "L",
+  "category": "housing",
+  "subcategory": "furniture",
+  "description": "Exibe o mapa-múndi em tempo real, mostrando a localização de membros da guilda.",
+  "effects": [{ "type": "passive", "name": "Coordenação", "description": "Permite comunicação global entre membros." }]
+}

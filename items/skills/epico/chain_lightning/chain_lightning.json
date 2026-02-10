@@ -1,0 +1,9 @@
+{
+  "_id": "omini_skl_cl666e6",
+  "name": "Relâmpago em Cadeia",
+  "tier": "E",
+  "category": "skills",
+  "subcategory": "magic",
+  "description": "Um raio que salta entre até 5 inimigos.",
+  "stats": { "damage": "8d6 (Elétrico)", "jump_range": "4.5m" }
+}

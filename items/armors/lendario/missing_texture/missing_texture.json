@@ -1,0 +1,7 @@
+{
+  "_id": "omini_arm_mt222l11",
+  "name": "Capa Texture Missing",
+  "tier": "L",
+  "description": "Uma capa com padrão xadrez rosa e preto. O sistema não consegue renderizar o usuário.",
+  "effects": [{ "type": "passive", "name": "Invisibilidade Real", "description": "+10 em Furtividade. Imune a detecção mágica." }]
+}

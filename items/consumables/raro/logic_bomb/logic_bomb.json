@@ -1,0 +1,7 @@
+{
+  "_id": "omini_cons_lb333r10",
+  "name": "Vírus Logic Bomb",
+  "tier": "R",
+  "description": "Uma granada de dados. Causa dano massivo a Construtos, Golens e Máquinas.",
+  "stats": { "damage": "10d10 (Tech)", "radius": "6m" }
+}

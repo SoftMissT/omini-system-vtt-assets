@@ -1,0 +1,9 @@
+{
+  "_id": "omini_hou_cr555r8",
+  "name": "Cápsula de Regeneração",
+  "tier": "R",
+  "category": "housing",
+  "subcategory": "furniture",
+  "description": "Cama tecnológica/mágica que acelera a cura em 200%.",
+  "stats": { "regen_rate": "2x" }
+}

@@ -1,0 +1,7 @@
+{
+  "_id": "omini_wep_ic002m2",
+  "name": "Innovate Clear",
+  "tier": "M",
+  "description": "Um cajado que permite criar uma dimensão de bolso (Housing Instance) com regras próprias.",
+  "foundry": { "command": "create_scene_copy" }
+}

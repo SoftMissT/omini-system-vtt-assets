@@ -1,0 +1,7 @@
+{
+  "_id": "omini_acc_ak777l6",
+  "name": "Cartão de Acesso Admin",
+  "tier": "L",
+  "description": "Abre qualquer porta, baú ou barreira mágica. Ignora testes de Ladinagem (CD 99+).",
+  "foundry": { "utility": "open_all_doors" }
+}

@@ -1,0 +1,9 @@
+{
+  "_id": "omini_hou_ts666e7",
+  "name": "Totem Sentinela",
+  "tier": "E",
+  "category": "housing",
+  "subcategory": "defense",
+  "description": "Uma torre mágica que ataca invasores automaticamente.",
+  "stats": { "range": "20m", "damage": "3d8 (Fogo)" }
+}

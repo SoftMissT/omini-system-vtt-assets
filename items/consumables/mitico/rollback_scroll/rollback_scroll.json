@@ -1,0 +1,7 @@
+{
+  "_id": "omini_cons_rs111m12",
+  "name": "Pergaminho de Rollback",
+  "tier": "M",
+  "description": "Força o servidor a voltar no tempo. Reseta a cena inteira para o estado inicial.",
+  "foundry": { "command": "reset_scene" }
+}

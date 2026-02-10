@@ -1,0 +1,9 @@
+{
+  "_id": "omini_acc_am999m9",
+  "name": "Anel de Mana Infinito",
+  "tier": "M",
+  "category": "accessories",
+  "type": "ring",
+  "description": "Conecta o usuário diretamente à Leyline do planeta. A regeneração de mana supera o gasto.",
+  "effects": [{ "type": "passive", "name": "Infinito", "description": "Regenera 100% do MP no início de cada turno." }]
+}

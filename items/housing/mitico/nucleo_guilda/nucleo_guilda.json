@@ -1,0 +1,10 @@
+{
+  "_id": "omini_hou_ng999m1",
+  "name": "Núcleo da Guilda (Lapis Lazuli)",
+  "tier": "M",
+  "category": "housing",
+  "subcategory": "structure",
+  "description": "Um cristal flutuante massivo que define a posse de um território. Se destruído, a guilda perde a base.",
+  "stats": { "hp": 5000, "defense": 20 },
+  "effects": [{ "type": "aura", "name": "Domínio Absoluto", "description": "Membros da guilda na área ganham +2 em todos os testes." }]
+}

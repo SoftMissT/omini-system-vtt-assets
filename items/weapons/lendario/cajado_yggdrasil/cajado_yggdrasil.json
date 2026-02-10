@@ -1,0 +1,10 @@
+{
+  "_id": "omini_wep_cy777l3",
+  "name": "Cajado da Árvore do Mundo",
+  "tier": "L",
+  "category": "weapons",
+  "subcategory": "magic",
+  "type": "staff",
+  "description": "Feito de um galho de Yggdrasil. Aumenta a potência de magias de cura e natureza.",
+  "stats": { "heal_bonus": "+100%", "mp_regen": "10/turno" }
+}

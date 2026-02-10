@@ -1,0 +1,7 @@
+{
+  "_id": "omini_acc_tk003m3",
+  "name": "Telos Karma",
+  "tier": "M",
+  "description": "Um espelho retrovisor da realidade. Permite forçar um reroll em qualquer teste (Aliado ou Inimigo).",
+  "stats": { "uses": "3/day" }
+}
