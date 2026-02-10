@@ -34,13 +34,15 @@
       "name": "omini-skills",
       "label": "Omini Anime Skills",
       "path": "packs/omini-skills",
-      "type": "Item"
+      "type": "Item",
+      "system": "custom-system-builder"
     },
     {
       "name": "omini-items",
       "label": "Omini Anime Items",
       "path": "packs/omini-items",
-      "type": "Item"
+      "type": "Item",
+      "system": "custom-system-builder"
     }
   ],
   "esmodules": [
