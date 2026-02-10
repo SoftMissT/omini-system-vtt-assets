@@ -1,0 +1,8 @@
+{
+  "_id": "omini_acc_os999m10",
+  "name": "Olho do Sobrevivente",
+  "tier": "M",
+  "category": "accessories",
+  "description": "Uma relíquia que permite ver a 'barra de vida' e os 'pontos fracos' de qualquer entidade.",
+  "effects": [{ "type": "passive", "name": "True Vision", "description": "Ignora invisibilidade, ilusões e revela fraquezas elementais." }]
+}

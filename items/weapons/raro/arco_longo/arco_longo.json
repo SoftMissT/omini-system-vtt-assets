@@ -1,0 +1,19 @@
+{
+  "_id": "omini_weapons_a7r3c1o9",
+  "name": "Arco Longo",
+  "name_key": "arco_longo",
+  "tier": "R",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "bow",
+  "description": "Arco assimétrico de alta tensão, forjado em madeira de Nichirin flexível.",
+  "stats": {
+    "base": { "damage": 5, "range": "30m", "crit": 19, "type": "perfurante" },
+    "scaling": { "cor": 1.0 },
+    "requirements": { "level": 8, "stats": { "cor": 13 } }
+  },
+  "effects": [
+    { "type": "active", "name": "Cometa Perfurante", "momentum": 3, "description": "Linha de 15m. Teste de Esquiva CD 13. Falha = Crítico Automático." }
+  ],
+  "meta": { "value": 2200, "weight": 3 }
+}

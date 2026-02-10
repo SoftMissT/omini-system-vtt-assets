@@ -1,0 +1,18 @@
+{
+  "_id": "omini_weapons_e1s2c3o4",
+  "name": "Escopeta Cano Duplo",
+  "name_key": "escopeta_cano_duplo",
+  "tier": "R",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "gun",
+  "description": "Arma de dispersão brutal com dois canos paralelos de grosso calibre.",
+  "stats": {
+    "base": { "damage": 6, "range": "Cone 6m", "crit": 20, "type": "perfurante" },
+    "scaling": { "cor": 0.5 }
+  },
+  "effects": [
+    { "type": "active", "name": "Dispersão à Queima-Roupa", "description": "Cone de 6m. Reflexos CD 14 ou Dano Total." }
+  ],
+  "meta": { "value": 1800, "weight": 6 }
+}

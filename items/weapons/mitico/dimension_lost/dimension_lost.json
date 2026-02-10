@@ -1,0 +1,14 @@
+{
+  "_id": "omini_weapons_dl000002",
+  "name": "Dimension Lost",
+  "name_key": "dimension_lost",
+  "tier": "M",
+  "category": "weapons",
+  "subcategory": "magic",
+  "type": "tome",
+  "description": "Capaz de envolver países inteiros em uma névoa dimensional impenetrável.",
+  "stats": { "base": { "area": "Global/Mapa", "type": "conceitual" } },
+  "effects": [
+    { "type": "active", "name": "Névoa do Vazio", "description": "Cria uma barreira que impede teleporte e visão externa." }
+  ]
+}

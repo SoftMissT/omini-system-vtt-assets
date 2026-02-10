@@ -1,0 +1,9 @@
+{
+  "_id": "omini_pets_tu555r8",
+  "name": "Tank",
+  "tier": "R",
+  "category": "pets",
+  "subcategory": "beast",
+  "description": "Um urso colossal blindado, focado em defesa e carga.",
+  "stats": { "hp_bonus": 50, "inventory_slots": 10 }
+}

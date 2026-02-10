@@ -1,0 +1,10 @@
+{
+  "_id": "omini_weapons_ghk777l5",
+  "name": "Garra do Hunter-King",
+  "tier": "L",
+  "category": "weapons",
+  "type": "claw",
+  "description": "Uma garra metálica que se funde ao braço do usuário e evolui com o sangue dos inimigos.",
+  "stats": { "base": { "damage": 10, "evolution_rank": 1, "exp": 0 } },
+  "foundry": { "flags": { "omini_system": { "evolvable": true, "max_rank": 5 } } }
+}

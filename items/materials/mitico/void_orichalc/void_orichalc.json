@@ -1,0 +1,8 @@
+{
+  "_id": "omini_mats_vo999m5",
+  "name": "Void-Orichalc",
+  "tier": "M",
+  "category": "materials",
+  "description": "Metal que não deveria existir. Consome a luz e o espaço ao seu redor.",
+  "enhancement_data": { "modifier": "concept_erasure", "durability": "infinite" }
+}

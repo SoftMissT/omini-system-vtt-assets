@@ -49,6 +49,8 @@
     "scripts/core/omni-core.js",
     "scripts/core/asset-manager.js",
     "scripts/core/gemini-service.js",
+    "scripts/utils/db-loader.js",
+    "scripts/macros/omini-db-generator.js",
     "scripts/huds/synthesis-core.js",
     "scripts/main.js"
   ],

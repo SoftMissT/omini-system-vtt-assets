@@ -1,0 +1,19 @@
+{
+  "_id": "omini_weapons_s5a6b7a8",
+  "name": "Sabaki",
+  "name_key": "sabaki",
+  "tier": "E",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "gun",
+  "description": "Pistolas modificadas automáticas com cadência de tiro sobrenatural.",
+  "stats": {
+    "base": { "damage": 4, "range": "12m", "crit": 19, "type": "perfurante" },
+    "scaling": { "men": 0.5 }
+  },
+  "effects": [
+    { "type": "active", "name": "Rajada", "momentum": 3, "description": "Ação Completa. Cone 6m. CD Uso: 1 Combate." },
+    { "type": "passive", "name": "Munição UV", "description": "Impede regeneração de PV por 1 turno." }
+  ],
+  "meta": { "value": 5000, "weight": 4 }
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "omini_weapons_r1i2f3l4",
+  "name": "Rifle",
+  "name_key": "rifle",
+  "tier": "R",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "gun",
+  "description": "Rifle de ferrolho com luneta de precisão.",
+  "stats": {
+    "base": { "damage": 8, "range": "60m", "crit": 19, "type": "perfurante" },
+    "scaling": { "men": 0.5 }
+  },
+  "effects": [
+    { "type": "passive", "name": "Atirador de Elite", "description": "Sem movimento: Alcance 120m e Crítico 18-20." }
+  ],
+  "meta": { "value": 2500, "weight": 7 }
+}

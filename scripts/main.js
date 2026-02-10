@@ -4,6 +4,7 @@
  */
 
 import { SynthesisCore } from "./huds/synthesis-core.js";
+import { OmniDbLoader } from "./utils/db-loader.js";
 
 Hooks.once("init", () => {
     console.log("🌌 OMNI-SYSTEM | Initializing...");
@@ -11,8 +12,11 @@ Hooks.once("init", () => {
     // Register settings, etc.
 });
 
-Hooks.once("ready", () => {
+Hooks.once("ready", async () => {
     console.log("🌌 OMNI-SYSTEM | Ready.");
+
+    // Initializate Database
+    await OmniDbLoader.load();
 
     // TEST BUTTON (Temporary) - Adds a button to the Token Layer controls
     Hooks.on("getSceneControlButtons", (controls) => {

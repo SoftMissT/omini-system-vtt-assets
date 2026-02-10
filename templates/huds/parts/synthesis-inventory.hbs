@@ -1,0 +1,17 @@
+<div class="synthesis-inventory">
+    <h3>ARSENAL</h3>
+    <div class="inventory-grid">
+        {{#each inventory}}
+        <div class="item-card" 
+             draggable="true" 
+             data-id="{{this.id}}" 
+             data-uuid="{{this.uuid}}"
+             data-tooltip="{{this.name}}">
+            <img src="{{this.img}}" alt="{{this.name}}">
+            <span class="item-name">{{this.name}}</span>
+        </div>
+        {{else}}
+        <div class="empty-inventory">No Compatible Items</div>
+        {{/each}}
+    </div>
+</div>

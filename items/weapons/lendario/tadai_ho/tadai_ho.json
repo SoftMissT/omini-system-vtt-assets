@@ -1,0 +1,19 @@
+{
+  "_id": "omini_weapons_t1a2d3a4",
+  "name": "Tadai-Hō",
+  "name_key": "tadai_ho",
+  "tier": "L",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "gun",
+  "description": "Canhão portátil experimental que dispara projéteis explosivos de Nichirin.",
+  "stats": {
+    "base": { "damage": 7, "range": "12m (Área)", "crit": 20, "type": "contundente/explosão" },
+    "scaling": { "cor": 1.0 }
+  },
+  "effects": [
+    { "type": "active", "name": "Disparo de Salto", "momentum": 1, "description": "Lança usuário 6m. Inimigos adjacentes Derrubados." },
+    { "type": "active", "name": "Mira Satélite", "momentum": 3, "description": "Dano 8 fixo em raio de 4,5m no próximo turno." }
+  ],
+  "meta": { "value": 15000, "weight": 15 }
+}

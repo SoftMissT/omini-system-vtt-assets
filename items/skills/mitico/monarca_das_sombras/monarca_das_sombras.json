@@ -1,0 +1,12 @@
+{
+  "_id": "omini_skills_sm9x00z1",
+  "name": "Monarca das Sombras",
+  "tier": "M",
+  "category": "skills",
+  "subcategory": "class",
+  "description": "Domínio absoluto sobre a morte e o exército de sombras.",
+  "stats": { "rank": "SSS" },
+  "effects": [
+    { "type": "active", "name": "Shadow Extraction", "description": "Transforma inimigos derrotados em soldados de sombra." }
+  ]
+}

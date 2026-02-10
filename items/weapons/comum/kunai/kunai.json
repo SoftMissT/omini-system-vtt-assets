@@ -1,0 +1,18 @@
+{
+  "_id": "omini_weapons_c9d0e1f2",
+  "name": "Kunai",
+  "name_key": "kunai",
+  "tier": "C",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "thrown",
+  "description": "Adagas táticas de arremesso.",
+  "stats": {
+    "base": { "damage": 4, "range": "9m", "crit": 18, "type": "perfurante" },
+    "scaling": { "men": 0.5 }
+  },
+  "effects": [
+    { "type": "active", "name": "Distração", "momentum": 1, "description": "Reduz defesa do inimigo para aliados." }
+  ],
+  "meta": { "stackable": true, "max_stack": 20, "value": 50 }
+}

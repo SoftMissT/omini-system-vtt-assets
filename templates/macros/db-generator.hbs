@@ -1,0 +1,179 @@
+<div class="omni-db-generator">
+    <header class="gen-header">
+        <h1>🧬 OMINI DB GENERATOR</h1>
+        <div class="mode-selector">
+            {{#each modes}}
+            <button class="mode-btn {{#if @first}}active{{/if}}" data-mode="{{this.id}}">
+                <i class="{{this.icon}}"></i> {{this.label}}
+            </button>
+            {{/each}}
+        </div>
+    </header>
+
+    <main class="gen-body">
+        <!-- Input Sections -->
+        <div id="section-icon" class="generator-section">
+            <label>Descreva o Ícone (Skill, Arma, Item):</label>
+            <textarea id="input-icon" placeholder="Ex: Espada de fogo azul, Skill de cura sagrada..."></textarea>
+        </div>
+
+        <div id="section-token" class="generator-section hidden">
+            <label>Descreva o Personagem/Monstro:</label>
+            <textarea id="input-token" placeholder="Ex: Cavaleiro negro com armadura de espinhos..."></textarea>
+        </div>
+
+        <div id="section-scene" class="generator-section hidden">
+            <label>Descreva o Cenário:</label>
+            <textarea id="input-scene" placeholder="Ex: Templo antigo flutuando no céu..."></textarea>
+        </div>
+
+        <div id="section-fusion" class="generator-section hidden">
+            <label>Itens para Fusão ou Conceito:</label>
+            <textarea id="input-fusion" placeholder="Ex: Espada Longa + Orbe de Fogo..."></textarea>
+        </div>
+
+        <button id="generate-btn" class="action-btn">
+            <i class="fas fa-magic"></i> GERAR (GEMINI AGENT)
+        </button>
+
+        <!-- Output Console -->
+        <div id="output-console">
+            {{#each history}}
+            <div class="history-entry">
+                <div class="entry-header">
+                    <span class="badge">{{this.mode}}</span>
+                    <span class="time">{{this.timestamp}}</span>
+                </div>
+                <div class="entry-content">
+                    {{{this.output}}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </main>
+</div>
+
+<style>
+.omni-db-generator {
+    --gold: #FFD700;
+    --blue: #00D9FF;
+    --dark: #0a0a10;
+    background: var(--dark);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.gen-header {
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+    border-bottom: 1px solid var(--blue);
+}
+
+.gen-header h1 {
+    font-family: 'Orbitron';
+    color: var(--gold);
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.mode-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.mode-btn {
+    background: transparent;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.mode-btn.active, .mode-btn:hover {
+    background: var(--blue);
+    color: black;
+    box-shadow: 0 0 10px var(--blue);
+}
+
+.gen-body {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.generator-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.generator-section.hidden {
+    display: none;
+}
+
+textarea {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #444;
+    color: white;
+    padding: 10px;
+    min-height: 80px;
+    border-radius: 5px;
+}
+
+.action-btn {
+    background: linear-gradient(45deg, #A855F7, #00D9FF);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    font-family: 'Orbitron';
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.action-btn:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+#output-console {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid #333;
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+.history-entry {
+    background: rgba(255,255,255,0.05);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 3px solid var(--gold);
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    color: #888;
+}
+
+.badge {
+    background: var(--blue);
+    color: black;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+</style>

@@ -1,0 +1,12 @@
+{
+  "_id": "omini_skills_cp3r1t22",
+  "name": "Campeão",
+  "tier": "R",
+  "category": "skills",
+  "subcategory": "trail",
+  "description": "Foco em força bruta e precisão crítica.",
+  "stats": { "crit_range": "18-20 (Lv3), 17-20 (Lv10)" },
+  "effects": [
+    { "type": "passive", "name": "Atleta Superior", "description": "Escalada e natação igual a caminhada. Salto dobrado." }
+  ]
+}

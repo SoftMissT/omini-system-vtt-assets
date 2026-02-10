@@ -1,0 +1,19 @@
+{
+  "_id": "omini_weapons_b2a4l5e6",
+  "name": "Balestra",
+  "name_key": "balestra",
+  "tier": "UC",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "crossbow",
+  "description": "Mecanismo de gatilho e polias reforçadas para disparos de alta pressão.",
+  "stats": {
+    "base": { "damage": 5, "range": "20m", "crit": 20, "type": "perfurante" },
+    "scaling": { "cor": 0.5 }
+  },
+  "effects": [
+    { "type": "active", "name": "Disparo de Impacto", "momentum": 1, "description": "Ignora RD e empurra o alvo 1,5m." },
+    { "type": "passive", "name": "Recarga Pesada", "description": "Exige Ação de Movimento para recarregar." }
+  ],
+  "meta": { "value": 650, "weight": 5 }
+}

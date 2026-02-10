@@ -1,0 +1,11 @@
+{
+  "_id": "omini_weapons_rn000003",
+  "name": "Regulus Nemea",
+  "name_key": "regulus_nemea",
+  "tier": "M",
+  "category": "weapons",
+  "subcategory": "melee",
+  "type": "axe",
+  "description": "Machado de batalha imbuído com a alma do Leão de Nemeia.",
+  "effects": [{ "type": "active", "name": "Earthquake Shake", "description": "Racha o solo em um raio de 30m." }]
+}

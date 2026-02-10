@@ -1,0 +1,8 @@
+{
+  "_id": "omini_mats_ss666e2",
+  "name": "Stygian Steel",
+  "tier": "E",
+  "category": "materials",
+  "description": "Aço negro extraído do submundo. Ressoa com a alma do portador.",
+  "enhancement_data": { "modifier": "soul_bound", "bonus_damage": "necrotic" }
+}

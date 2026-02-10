@@ -1,0 +1,19 @@
+{
+  "_id": "omini_weapons_e5f6a7b8",
+  "name": "Pistolas Gêmeas",
+  "name_key": "pistolas_gemeas",
+  "tier": "UC",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "gun",
+  "description": "Duas pistolas de cano curto banhadas em água benta e chumbo solar.",
+  "stats": {
+    "base": { "damage": 4, "range": "9m", "crit": 19, "type": "perfurante" },
+    "scaling": { "men": 0.5 }
+  },
+  "effects": [
+    { "type": "active", "name": "Gatilho Rápido", "description": "Dispara ambas as armas com -2 no acerto." },
+    { "type": "passive", "name": "Perseguição", "description": "Sem penalidades por movimento." }
+  ],
+  "meta": { "value": 800, "weight": 4 }
+}

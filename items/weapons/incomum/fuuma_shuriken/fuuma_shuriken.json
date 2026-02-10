@@ -1,0 +1,20 @@
+{
+  "_id": "omini_weapons_f4u8m1a2",
+  "name": "Fuuma Shuriken",
+  "name_key": "fuuma_shuriken",
+  "tier": "UC",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "thrown",
+  "description": "Uma shuriken gigante de quatro pontas dobráveis, projetada para mutilação em área.",
+  "lore": "Utilizada por clãs de shinobi especializados em controle de multidões, sua aerodinâmica permite atravessar múltiplos alvos.",
+  "stats": {
+    "base": { "damage": 6, "range": "12m", "crit": 19, "type": "cortante" },
+    "scaling": { "men": 0.5 },
+    "requirements": { "level": 3 }
+  },
+  "effects": [
+    { "type": "passive", "name": "Corte Passante", "description": "Se houver inimigo atrás do alvo em linha reta, realize segundo ataque com -2 no acerto." }
+  ],
+  "meta": { "stackable": true, "max_stack": 5, "value": 450, "weight": 2 }
+}

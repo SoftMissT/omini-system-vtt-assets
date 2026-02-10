@@ -1,0 +1,9 @@
+{
+  "_id": "omini_mats_ae777l1",
+  "name": "Ætherium",
+  "tier": "L",
+  "category": "materials",
+  "description": "Metal estelar translúcido que brilha com luz própria. Harmoniza mana.",
+  "meta": { "stackable": true, "max_stack": 99, "value": 5000 },
+  "enhancement_data": { "modifier": "mana_surge", "success_rate": 0.15 }
+}

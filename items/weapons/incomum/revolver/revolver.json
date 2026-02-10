@@ -1,0 +1,18 @@
+{
+  "_id": "omini_weapons_r5e6v7o8",
+  "name": "Revólver",
+  "name_key": "revolver",
+  "tier": "UC",
+  "category": "weapons",
+  "subcategory": "ranged",
+  "type": "gun",
+  "description": "Arma de tambor confiável e de saque rápido.",
+  "stats": {
+    "base": { "damage": 4, "range": "15m", "crit": 18, "type": "perfurante" },
+    "scaling": { "men": 0.5 }
+  },
+  "effects": [
+    { "type": "active", "name": "Fan the Hammer", "description": "Até 2 ataques com uma Ação Principal (Desvantagem no 2º)." }
+  ],
+  "meta": { "value": 900, "weight": 2 }
+}

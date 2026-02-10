@@ -1,0 +1,19 @@
+{
+  "_id": "omini_weapons_t5o6m7a8",
+  "name": "Tomahawk",
+  "name_key": "tomahawk",
+  "tier": "C",
+  "category": "weapons",
+  "subcategory": "thrown",
+  "type": "axe",
+  "description": "Machadinha balanceada para combate corpo a corpo ou arremesso.",
+  "stats": {
+    "base": { "damage": 5, "range": "1.5m-9m", "crit": 17, "type": "cortante" },
+    "scaling": { "cor": 1.0 }
+  },
+  "effects": [
+    { "type": "active", "name": "Quebra-Postura", "momentum": 1, "description": "-2 na Defesa do inimigo até o fim do turno." },
+    { "type": "passive", "name": "Arremesso Destruidor", "description": "Dano dobrado contra objetos/escudos." }
+  ],
+  "meta": { "stackable": true, "max_stack": 3, "value": 200, "weight": 1.5 }
+}

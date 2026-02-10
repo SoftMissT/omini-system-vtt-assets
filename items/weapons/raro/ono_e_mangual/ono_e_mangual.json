@@ -1,0 +1,22 @@
+{
+  "_id": "omini_weapons_a1b2c3d4",
+  "name": "Ono & Mangual",
+  "name_key": "ono_e_mangual",
+  "tier": "R",
+  "category": "weapons",
+  "subcategory": "melee",
+  "type": "flail",
+  "description": "Um machado de guerra em uma ponta e uma esfera de ferro espinhosa na outra, conectados por uma longa corrente de Nichirin puro.",
+  "lore": "Uma arma pesada que exige força bruta e coordenação motora extrema para não ferir o próprio usuário.",
+  "stats": {
+    "base": { "damage": 9, "range": "4.5m", "crit": 20, "type": "cortante/contundente" },
+    "scaling": { "cor": 1.0 },
+    "requirements": { "level": 5, "stats": { "cor": 12 } }
+  },
+  "effects": [
+    { "type": "passive", "name": "Zona de Impacto", "description": "Ameaça 4.5m ao redor para ataques de oportunidade." },
+    { "type": "active", "name": "Esmagamento Duplo", "momentum": 3, "description": "Dois ataques, ignora escudos e chance de derrubar." }
+  ],
+  "meta": { "stackable": false, "value": 1500, "weight": 8 },
+  "foundry": { "flags": { "sao_omini_weapons": { "momentumCost": 3 } } }
+}

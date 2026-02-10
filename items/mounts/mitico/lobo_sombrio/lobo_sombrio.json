@@ -1,0 +1,19 @@
+{
+  "_id": "omini_mounts_ls7v9m22",
+  "name": "Lobo Sombrio Devorador de Almas",
+  "name_key": "lobo_sombrio_devorador",
+  "tier": "M",
+  "category": "mounts",
+  "subcategory": "companion",
+  "description": "Uma entidade de sombra que se sincroniza com a alma do mestre.",
+  "lore": "Nascido das fendas dimensionais, este lobo consome a essência dos caídos para fortalecer seu portador.",
+  "stats": {
+    "base": { "dps_bonus": "120%", "def_pierce": "80%" },
+    "special": "Frenesi Dimensional (100 stacks)"
+  },
+  "effects": [
+    { "type": "onHit", "name": "Fragmento de Alma", "description": "Ganha 1 stack por acerto. Em 100, triplica o dano por 5s." },
+    { "type": "passive", "name": "Salto Dimensional", "description": "Flanqueio instantâneo em ambientes de Vazio." }
+  ],
+  "meta": { "tradeable": false, "value": 0 }
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "omini_weapons_re7k91l0",
+  "name": "Rasgar do Eclipse",
+  "tier": "L",
+  "category": "weapons",
+  "subcategory": "melee",
+  "type": "sword",
+  "description": "Uma lâmina que alterna entre os estados de Luz e Sombra (Dual Mode).",
+  "stats": { "base": { "damage": 12, "type": "variável" } },
+  "effects": [
+    { "type": "active", "name": "Dual Mode", "description": "Alterna entre dano radiante e necrótico." }
+  ]
+}

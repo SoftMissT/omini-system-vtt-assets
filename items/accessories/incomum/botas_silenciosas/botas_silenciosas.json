@@ -1,0 +1,10 @@
+{
+  "_id": "omini_acc_bs111u1",
+  "name": "Botas Silenciosas",
+  "tier": "UC",
+  "category": "accessories",
+  "type": "feet",
+  "description": "Botas feitas de couro de Morcego Sombrio que anulam o som dos passos.",
+  "stats": { "modifiers": { "stealth": 2 } },
+  "effects": [{ "type": "passive", "name": "Passo Etéreo", "description": "Vantagem em testes de Furtividade ao se mover em sombras." }]
+}
