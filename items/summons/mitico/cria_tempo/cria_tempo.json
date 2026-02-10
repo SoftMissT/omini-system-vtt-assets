@@ -1,0 +1,13 @@
+{
+  "_id": "omini_sum_ct006m1",
+  "name": "Cria do Tempo Primordial",
+  "tier": "M",
+  "category": "summons",
+  "type": "temporal",
+  "description": "Uma pequena criatura alada que manipula o fluxo do tempo ao redor do mestre.",
+  "stats": { "burst_bonus": "500%", "cd_reduction": "50%" },
+  "effects": [
+    { "type": "active", "name": "Rebobinar Momento", "description": "Reverte HP/MP/Posição de 3s atrás." },
+    { "type": "passive", "name": "Paradoxo Temporal", "description": "Cria uma cópia do jogador por 10s." }
+  ]
+}

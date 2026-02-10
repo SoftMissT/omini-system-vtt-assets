@@ -1,0 +1,10 @@
+{
+  "_id": "omini_cons_an000c1",
+  "name": "Antídoto",
+  "tier": "C",
+  "category": "consumables",
+  "subcategory": "remedy",
+  "description": "Uma poção amarga que neutraliza venenos básicos.",
+  "meta": { "stackable": true, "max_stack": 30, "value": 200 },
+  "foundry": { "command": "cure_poison_basic" }
+}

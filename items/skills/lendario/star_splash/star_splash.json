@@ -1,0 +1,10 @@
+{
+  "_id": "omini_art_ss10l10",
+  "name": "Star Splash",
+  "tier": "L",
+  "category": "skills",
+  "subcategory": "artespada",
+  "stats": { "rank": 10, "momentumCost": 5, "delay": "4.0s" },
+  "description": "Um combo de 8 golpes de alta velocidade que parece uma constelação.",
+  "effects": [{ "type": "active", "name": "Combo Estelar", "description": "Realiza 8 rolagens de ataque. Se 4+ acertarem, o alvo fica Atordoado." }]
+}

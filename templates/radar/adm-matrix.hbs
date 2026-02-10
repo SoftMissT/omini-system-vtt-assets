@@ -1,0 +1,40 @@
+<div class="adm-content">
+    <div class="adm-header">
+        <div class="adm-title">⬢ ABSOLUTE DETECTION MATRIX ⬢</div>
+        <div class="adm-status-indicator">
+            <div class="adm-status-dot"></div>
+            <span>ONLINE</span>
+        </div>
+    </div>
+    <div class="adm-radar-container">
+        <div class="adm-radar-scope">
+            <div class="adm-range-ring r1"></div>
+            <div class="adm-range-ring r2"></div>
+            <div class="adm-range-ring r3"></div>
+            <div class="adm-scanner"></div>
+            <div class="adm-player-marker"></div>
+            <div class="adm-blips" id="adm-blips"></div>
+            {{#unless hasToken}}
+            <div class="adm-offline">⚠️ SEM SINAL ⚠️</div>
+            {{/unless}}
+        </div>
+    </div>
+    <div class="adm-layers">
+        <div class="adm-layer-btn active" data-layer="physical">
+            <div class="adm-layer-icon">🌐</div>
+            <div class="adm-layer-name">Físico</div>
+            <div class="adm-layer-range">{{ranges.physical}}m</div>
+            <div class="adm-layer-count">{{counts.physical}}</div>
+        </div>
+        <div class="adm-layer-btn {{#unless layers.spiritual.unlocked}}locked{{/unless}}" data-layer="spiritual">
+            <div class="adm-layer-icon">🔮</div>
+            <div class="adm-layer-name">Espiritual</div>
+            <div class="adm-layer-range">{{ranges.spiritual}}m</div>
+        </div>
+        <div class="adm-layer-btn {{#unless layers.conceptual.unlocked}}locked{{/unless}}" data-layer="conceptual">
+            <div class="adm-layer-icon">👁️</div>
+            <div class="adm-layer-name">Conceitual</div>
+            <div class="adm-layer-range">∞</div>
+        </div>
+    </div>
+</div>

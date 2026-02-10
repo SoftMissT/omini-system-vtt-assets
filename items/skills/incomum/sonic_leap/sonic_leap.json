@@ -1,0 +1,10 @@
+{
+  "_id": "omini_art_sl05u5",
+  "name": "Sonic Leap",
+  "tier": "UC",
+  "category": "skills",
+  "subcategory": "artespada",
+  "stats": { "rank": 5, "momentumCost": 2, "delay": "1.0s" },
+  "description": "Uma estocada descendente em alta velocidade vinda do ar.",
+  "effects": [{ "type": "active", "name": "Avanço Aéreo", "description": "Salta até 6m e ataca com vantagem." }]
+}

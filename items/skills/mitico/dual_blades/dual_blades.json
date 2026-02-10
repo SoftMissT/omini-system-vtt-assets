@@ -1,0 +1,10 @@
+{
+  "_id": "omini_skill_db999m1",
+  "name": "Mestre das Espadas Duplas",
+  "tier": "M",
+  "category": "skills",
+  "subcategory": "special_trail",
+  "description": "A habilidade única concedida ao jogador com o tempo de reação mais rápido.",
+  "stats": { "atk_speed": "+50%", "double_hit_chance": "100%" },
+  "effects": [{ "type": "passive", "name": "Dual Wield Mastery", "description": "Permite usar duas espadas de uma mão simultaneamente sem penalidades." }]
+}

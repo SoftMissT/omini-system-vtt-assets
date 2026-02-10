@@ -4,12 +4,23 @@
  */
 
 import { SynthesisCore } from "./huds/synthesis-core.js";
+import { RadarPlayerHUD } from "./radar-player.js";
+import { CharacterSheetJJK } from "./huds/jjk-character-sheet.js";
+import { AbsoluteDetectionMatrix } from "./radar/absolute-detection-matrix.js";
+import { GMControlHUD } from "./radar/radar-gm-control.js";
 import { OmniDbLoader } from "./utils/db-loader.js";
 
 Hooks.once("init", () => {
     console.log("🌌 OMNI-SYSTEM | Initializing...");
     
-    // Register settings, etc.
+    // Register settings
+    game.settings.register('world', 'sao_radar_system_event', {
+        name: 'Radar Active Signal',
+        scope: 'world',
+        config: false,
+        type: Object,
+        default: { active: false }
+    });
 });
 
 Hooks.once("ready", async () => {
@@ -31,6 +42,52 @@ Hooks.once("ready", async () => {
                     new SynthesisCore().render(true);
                 }
             });
+            
+            tokenControls.tools.push({
+                name: "omni-radar-player",
+                title: "Open Radar (Player)",
+                icon: "fas fa-satellite-dish",
+                button: true,
+                onClick: () => {
+                    const actor = game.user.character;
+                    if (actor) new RadarPlayerHUD(actor).render(true);
+                    else ui.notifications.warn("Selecione um personagem primeiro!");
+                }
+            });
+
+            tokenControls.tools.push({
+                name: "jjk-sheet",
+                title: "Open JJK Sheet",
+                icon: "fas fa-scroll",
+                button: true,
+                onClick: () => {
+                    const actor = game.user.character || canvas.tokens.controlled[0]?.actor;
+                    if (actor) new CharacterSheetJJK(actor).render(true);
+                    else ui.notifications.warn("Selecione um personagem ou token primeiro!");
+                }
+            });
+
+            tokenControls.tools.push({
+                name: "adm-matrix",
+                title: "Open ADM Matrix",
+                icon: "fas fa-eye",
+                button: true,
+                onClick: () => {
+                    new AbsoluteDetectionMatrix().render(true);
+                }
+            });
+
+            if (game.user.isGM) {
+                tokenControls.tools.push({
+                    name: "adm-gm-control",
+                    title: "Radar GM Control",
+                    icon: "fas fa-terminal",
+                    button: true,
+                    onClick: () => {
+                        new GMControlHUD().render(true);
+                    }
+                });
+            }
         }
     });
 });

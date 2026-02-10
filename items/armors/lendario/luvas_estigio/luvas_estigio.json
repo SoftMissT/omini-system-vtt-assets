@@ -1,0 +1,11 @@
+{
+  "_id": "omini_arm_le777l2",
+  "name": "Luvas de Aço Estígio",
+  "tier": "L",
+  "category": "armors",
+  "subcategory": "hands",
+  "set_id": "stygian_set",
+  "description": "Manoplas de metal negro que parecem absorver a luz ambiente.",
+  "stats": { "ac": 2, "rd": 3 },
+  "effects": [{ "type": "onHit", "name": "Toque do Abismo", "description": "Ataques desarmados ou com armas de proximidade causam +1d6 de dano necrótico." }]
+}

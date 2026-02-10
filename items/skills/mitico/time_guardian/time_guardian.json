@@ -1,0 +1,10 @@
+{
+  "_id": "omini_skill_tg999m9",
+  "name": "Guardião do Tempo",
+  "tier": "M",
+  "category": "skills",
+  "description": "Permite manipular o fluxo temporal em pequena escala.",
+  "effects": [
+    { "type": "active", "name": "Rebobinar Momento", "description": "Reverte HP/MP para o estado de 3 segundos atrás." }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "omini_cons_cc111u1",
+  "name": "Cristal de Cura",
+  "tier": "U",
+  "category": "consumables",
+  "subcategory": "healing",
+  "description": "Um cristal verde que libera energia vital ao ser quebrado.",
+  "meta": { "stackable": true, "max_stack": 20, "value": 500 },
+  "foundry": { "command": "heal_self_30" }
+}

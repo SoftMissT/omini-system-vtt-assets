@@ -1,0 +1,9 @@
+{
+  "_id": "omini_cons_rr555r8",
+  "name": "Gis de Ragout Rabbit (Rank S)",
+  "tier": "R",
+  "category": "consumables",
+  "subcategory": "food",
+  "description": "Comida de luxo feita com a carne do raríssimo coelho Ragout. Concede buffs massivos por 4 horas.",
+  "stats": { "buff": { "all_stats": 2, "exp_rate": 1.1 } }
+}

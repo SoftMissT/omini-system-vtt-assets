@@ -1,0 +1,10 @@
+{
+  "_id": "omini_art_h01c1",
+  "name": "Horizontal",
+  "tier": "C",
+  "category": "skills",
+  "subcategory": "artespada",
+  "stats": { "rank": 1, "momentumCost": 1, "delay": "0.5s" },
+  "description": "Um corte lateral básico mas eficiente.",
+  "effects": [{ "type": "active", "name": "Corte Simples", "description": "Causa dano da arma + bônus de Destreza." }]
+}

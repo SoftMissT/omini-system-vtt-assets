@@ -1,0 +1,10 @@
+{
+  "_id": "omini_cons_ss777e1",
+  "name": "Pergaminho de Habilidade",
+  "tier": "E",
+  "category": "consumables",
+  "subcategory": "utility",
+  "description": "Um pergaminho antigo que ensina uma técnica temporária aleatória.",
+  "meta": { "stackable": false, "value": 5000 },
+  "foundry": { "command": "grant_random_skill" }
+}

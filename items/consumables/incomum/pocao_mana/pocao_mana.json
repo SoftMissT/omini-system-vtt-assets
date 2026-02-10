@@ -1,0 +1,10 @@
+{
+  "_id": "omini_cons_pm222u1",
+  "name": "Poção de Mana",
+  "tier": "U",
+  "category": "consumables",
+  "subcategory": "resource",
+  "description": "Uma poção azul efervescente que restaura mana.",
+  "meta": { "stackable": true, "max_stack": 20, "value": 450 },
+  "foundry": { "command": "restore_mana_50" }
+}

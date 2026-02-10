@@ -1,0 +1,11 @@
+{
+  "_id": "omini_arm_pd666e1",
+  "name": "Peitoral do Dragão",
+  "tier": "E",
+  "category": "armors",
+  "subcategory": "chest",
+  "set_id": "dragon_set",
+  "description": "Forjado com escamas de dragão vermelho, emite um calor constante.",
+  "stats": { "ac": 8, "rd": 5, "fire_res": "50%" },
+  "effects": [{ "type": "passive", "name": "Coração do Dragão", "description": "+2 de Força enquanto equipado." }]
+}

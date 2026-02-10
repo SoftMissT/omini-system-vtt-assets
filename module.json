@@ -52,8 +52,19 @@
     "scripts/utils/db-loader.js",
     "scripts/macros/omini-db-generator.js",
     "scripts/huds/synthesis-core.js",
+    "scripts/radar-core-refactored.js",
+    "scripts/radar-integration.js",
+    "scripts/radar-player.js",
+    "scripts/radar/absolute-detection-matrix.js",
+    "scripts/radar/radar-gm-control.js",
+    "scripts/huds/jjk-character-sheet.js",
     "scripts/main.js"
   ],
+  "styles": [
+    "styles/radar-system.css",
+    "styles/jjk-sheet.css"
+  ],
+  "socket": true,
   "url": "https://github.com/SoftMissT/omini-system-vtt-assets",
   "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt-assets/main/module.json",
   "download": "https://github.com/SoftMissT/omini-system-vtt-assets/archive/refs/heads/main.zip",

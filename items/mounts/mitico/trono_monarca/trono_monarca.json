@@ -1,0 +1,10 @@
+{
+  "_id": "omini_mnt_tm999m3",
+  "name": "Trono Flutuante do Monarca",
+  "tier": "M",
+  "category": "mounts",
+  "type": "vehicle",
+  "description": "Um trono de obsidiana e ouro que levita. O usuário não anda, ele impera.",
+  "stats": { "speed": "9m (Hover)", "defense_bonus": "+5 CA" },
+  "effects": [{ "type": "aura", "name": "Presença Real", "description": "Inimigos num raio de 9m devem testar Vontade ou ficam Amedrontados." }]
+}

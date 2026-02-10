@@ -1,0 +1,10 @@
+{
+  "_id": "omini_mnt_pc777l1",
+  "name": "Pégaso de Cristal",
+  "tier": "L",
+  "category": "mounts",
+  "type": "flying",
+  "description": "Um cavalo alado feito de prismas refratores. Deixa um rastro de arco-íris.",
+  "stats": { "speed": "18m (Voo)", "capacity": 2 },
+  "effects": [{ "type": "toggle", "name": "Montar: Voo Prismático", "description": "Concede Voo 18m e imunidade a Terreno Difícil." }]
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "omini_art_vs09e9",
+  "name": "Vorpal Strike",
+  "tier": "E",
+  "category": "skills",
+  "subcategory": "artespada",
+  "stats": { "rank": 9, "momentumCost": 4, "delay": "2.5s" },
+  "description": "Uma estocada pesada de longo alcance com o dobro do comprimento da lâmina.",
+  "effects": [{ "type": "active", "name": "Alcance Estendido", "description": "Dano massivo em linha reta de 3m. Ignora 50% da armadura." }]
+}

@@ -1,0 +1,135 @@
+{{!-- modules/omini-system/templates/radar/gm-control.hbs --}}
+<div class="radar-gm-layout">
+    {{!-- Sidebar com tipos de evento --}}
+    <aside class="radar-event-sidebar">
+        <div class="sidebar-header">
+            <i class="fas fa-satellite-dish"></i>
+            <span>TIPOS DE SINAL</span>
+        </div>
+        
+        <div class="event-type-list">
+            {{#each eventTypes}}
+            <button class="event-type-btn {{#if (eq ../placingType this.key)}}active{{/if}}" 
+                    data-action="select-event" 
+                    data-type="{{this.key}}"
+                    title="{{this.desc}}">
+                <span class="event-icon-dot" style="background-color: {{this.color}}; box-shadow: 0 0 8px {{this.color}};"></span>
+                <div class="event-info">
+                    <span class="event-label">{{this.label}}</span>
+                    <span class="event-duration">{{#if this.duration}}{{this.durationText}}{{else}}Permanente{{/if}}</span>
+                </div>
+                <span class="event-emoji">{{this.icon}}</span>
+            </button>
+            {{/each}}
+        </div>
+    </aside>
+
+    {{!-- Main panel de controle --}}
+    <main class="radar-main-panel">
+        <div class="control-header">
+            <h3><i class="fas fa-crosshairs"></i> CENTRO DE COMANDO</h3>
+            <div class="status-indicator {{#if isPlacing}}active{{/if}}">
+                {{#if isPlacing}}
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                    <span>MODO ATIVO</span>
+                {{else}}
+                    <i class="fas fa-circle"></i>
+                    <span>STANDBY</span>
+                {{/if}}
+            </div>
+        </div>
+
+        <div class="control-grid">
+            {{!-- Target selection --}}
+            <div class="control-row">
+                <label class="control-label">
+                    <i class="fas fa-users"></i>
+                    ALVO
+                </label>
+                <select class="control-select" name="targetActorId">
+                    <option value="all">📡 BROADCAST — Todos os Jogadores</option>
+                    <optgroup label="Jogadores">
+                        {{#each players}}
+                        <option value="{{this.actorId}}">👤 {{this.name}}</option>
+                        {{/each}}
+                    </optgroup>
+                </select>
+            </div>
+
+            {{!-- Message input --}}
+            <div class="control-row">
+                <label class="control-label">
+                    <i class="fas fa-comment-dots"></i>
+                    MENSAGEM
+                </label>
+                <input class="control-input" 
+                       type="text" 
+                       name="message" 
+                       placeholder="Mensagem personalizada (opcional)..."
+                       maxlength="100">
+            </div>
+
+            {{!-- Duration override --}}
+            <div class="control-row">
+                <label class="control-label">
+                    <i class="fas fa-clock"></i>
+                    DURAÇÃO
+                </label>
+                <select class="control-select" name="customDuration">
+                    <option value="">Padrão do tipo</option>
+                    <option value="10000">10 segundos</option>
+                    <option value="30000">30 segundos</option>
+                    <option value="60000">1 minuto</option>
+                    <option value="300000">5 minutos</option>
+                    <option value="null">Permanente</option>
+                </select>
+            </div>
+        </div>
+
+        {{!-- Info panel --}}
+        <div class="info-display {{#if isPlacing}}active{{/if}}">
+            {{#if isPlacing}}
+                <div class="info-content">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                    <div>
+                        <h4>🎯 MODO DE POSICIONAMENTO ATIVO</h4>
+                        <p>Tipo: <strong style="color: {{placingEventColor}}">{{placingEventLabel}}</strong></p>
+                        <p class="instruction">Clique no mapa para enviar o sinal.</p>
+                    </div>
+                </div>
+                <button class="btn-cancel-placement" data-action="cancel-placement">
+                    <i class="fas fa-times"></i> CANCELAR
+                </button>
+            {{else}}
+                <div class="info-content standby">
+                    <i class="fas fa-hand-pointer fa-2x"></i>
+                    <div>
+                        <h4>⚙️ AGUARDANDO COMANDO</h4>
+                        <p>Selecione um tipo de evento à esquerda para iniciar.</p>
+                    </div>
+                </div>
+            {{/if}}
+        </div>
+
+        {{!-- Active signals list --}}
+        {{#if activeSignals.length}}
+        <div class="active-signals-panel">
+            <h4><i class="fas fa-broadcast-tower"></i> SINAIS ATIVOS</h4>
+            <div class="signals-list">
+                {{#each activeSignals}}
+                <div class="signal-item" style="border-left-color: {{this.color}}">
+                    <span class="signal-emoji">{{this.icon}}</span>
+                    <div class="signal-info">
+                        <span class="signal-type">{{this.label}}</span>
+                        <span class="signal-target">{{this.targetName}}</span>
+                    </div>
+                    <button class="btn-cancel-signal" data-action="cancel-signal" data-signal-id="{{this.id}}" title="Cancelar sinal">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/if}}
+    </main>
+</div>

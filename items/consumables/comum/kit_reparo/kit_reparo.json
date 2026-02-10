@@ -1,0 +1,10 @@
+{
+  "_id": "omini_cons_kr000c1",
+  "name": "Kit de Reparo",
+  "tier": "C",
+  "category": "consumables",
+  "subcategory": "maintenance",
+  "description": "Ferramentas básicas para restaurar a durabilidade de equipamentos.",
+  "meta": { "stackable": true, "max_stack": 5, "value": 800 },
+  "foundry": { "command": "repair_weapon_20" }
+}

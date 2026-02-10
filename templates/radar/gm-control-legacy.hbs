@@ -1,0 +1,29 @@
+<div class="gm-hud-layout">
+    <div class="gm-hud-events">
+        <div style="font-size: 10px; color: #666; text-transform: uppercase; margin-bottom: 5px;">Eventos de Radar</div>
+        {{#each eventTypes}}
+        <button class="gm-hud-event-btn" data-action="select-event" data-type="{{this.key}}">
+            <div class="gm-hud-color-dot" style="background-color: {{this.color}}"></div>
+            <span>{{this.label}}</span>
+        </button>
+        {{/each}}
+    </div>
+    <div class="gm-hud-main">
+        <div class="gm-hud-row">
+            <div class="gm-hud-label">ALVO</div>
+            <select class="gm-hud-select" name="targetActorId">
+                <option value="all">TODOS OS JOGADORES</option>
+                {{#each players}}
+                <option value="{{this.actorId}}">{{this.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="gm-hud-row">
+            <div class="gm-hud-label">MENSAGEM</div>
+            <input class="gm-hud-input" type="text" name="message" value="Sinal Detectado">
+        </div>
+        <div class="gm-hud-info" id="gm-hud-info-panel">
+            Selecione um tipo de evento à esquerda para ativar o modo de posicionamento.
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+{
+  "_id": "omini_mnt_cf444u10",
+  "name": "Carruagem Fantasma",
+  "tier": "UC",
+  "category": "mounts",
+  "type": "vehicle",
+  "description": "Transporte etéreo que atravessa paredes (com risco).",
+  "stats": { "speed": "12m", "capacity": 4 }
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "omini_arm_em999m4",
+  "name": "Elmo do Monarca",
+  "tier": "M",
+  "category": "armors",
+  "subcategory": "head",
+  "set_id": "monarch_set",
+  "description": "Um elmo fechado que brilha com uma chama roxa interna. O portador vê através das sombras.",
+  "stats": { "ac": 5, "rd": 10 },
+  "effects": [{ "type": "passive", "name": "Sovereign Vision", "description": "Imunidade a cegueira e visão no escuro mágica (30m)." }]
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "omini_cons_ct555r1",
+  "name": "Cristal de Teleporte",
+  "tier": "R",
+  "category": "consumables",
+  "subcategory": "utility",
+  "description": "Um cristal azul que brilha intensamente ao ser ativado, transportando o usuário para a cidade mais próxima.",
+  "meta": { "stackable": true, "max_stack": 10, "value": 1500 },
+  "foundry": { "command": "teleport_town" }
+}

@@ -1,0 +1,8 @@
+{
+  "_id": "omini_cons_pr999m5",
+  "name": "Pedra de Ressurreição",
+  "tier": "M",
+  "category": "consumables",
+  "description": "Item de drop único de boss de evento. Permite reviver um jogador se usado em até 10 segundos após a morte.",
+  "meta": { "stackable": false, "value": 0 }
+}

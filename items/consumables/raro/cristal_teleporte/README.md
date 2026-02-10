@@ -1,0 +1,3 @@
+# 💠 Cristal de Teleporte
+**Prompt Midjourney:**
+A perfect fusion of Ufotable anime animation and Redice Studio manhwa art, masterpiece illustration, premium webtoon cover art style, glowing blue hexagonal crystal, magical teleportation aura, floating particles, cinematic lighting, 8k --ar 1:1 --niji 7

@@ -1,0 +1,8 @@
+{
+  "_id": "omini_sum_ee005l2",
+  "name": "Eco Espectral da Memória",
+  "tier": "L",
+  "category": "summons",
+  "description": "Um fantasma que se alimenta da sanidade dos inimigos.",
+  "effects": [{ "type": "aura", "name": "Desespero Sutil", "description": "-15% Atk Speed para inimigos." }]
+}

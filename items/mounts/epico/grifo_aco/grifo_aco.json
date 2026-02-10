@@ -1,0 +1,9 @@
+{
+  "_id": "omini_mnt_ga666e5",
+  "name": "Grifo de Aço",
+  "tier": "E",
+  "category": "mounts",
+  "type": "mechanical",
+  "description": "Autômato voador blindado.",
+  "stats": { "speed": "16m (Voo)", "rd": 5 }
+}

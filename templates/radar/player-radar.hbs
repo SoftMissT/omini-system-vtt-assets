@@ -1,0 +1,65 @@
+{{!-- modules/omini-system/templates/radar/player-radar.hbs --}}
+<div class="radar-player-hud">
+    {{!-- Mini-map display --}}
+    <div class="radar-minimap">
+        <canvas id="radar-canvas-{{actorId}}" width="200" height="200"></canvas>
+        <div class="radar-center-marker"></div>
+        
+        {{!-- Active signals overlay --}}
+        <div class="radar-signals-overlay">
+            {{#each signals}}
+            <div class="radar-signal-marker" 
+                 style="left: {{this.screenX}}%; top: {{this.screenY}}%; color: {{this.color}};"
+                 data-signal-id="{{this.id}}"
+                 title="{{this.message}}">
+                <span class="signal-pulse"></span>
+                <span class="signal-icon">{{this.icon}}</span>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    {{!-- Signal notifications --}}
+    <div class="radar-notifications">
+        {{#each activeNotifications}}
+        <div class="radar-notification {{this.type}}" 
+             style="border-color: {{this.color}}; background: linear-gradient(90deg, {{this.color}}22, transparent);"
+             data-notification-id="{{this.id}}">
+            <span class="notif-icon">{{this.icon}}</span>
+            <div class="notif-content">
+                <span class="notif-label">{{this.label}}</span>
+                <span class="notif-message">{{this.message}}</span>
+            </div>
+            <button class="notif-dismiss" data-action="dismiss-notification" data-id="{{this.id}}">
+                <i class="fas fa-times"></i>
+            </button>
+            {{#if this.duration}}
+            <div class="notif-timer" style="animation-duration: {{this.duration}}ms;"></div>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+
+    {{!-- Compass --}}
+    <div class="radar-compass">
+        <div class="compass-ring">
+            <span class="compass-n">N</span>
+            <span class="compass-e">E</span>
+            <span class="compass-s">S</span>
+            <span class="compass-w">W</span>
+        </div>
+        <div class="compass-needle" style="transform: rotate({{compassRotation}}deg);"></div>
+    </div>
+
+    {{!-- Stats display --}}
+    <div class="radar-stats">
+        <div class="stat-item">
+            <i class="fas fa-satellite-dish"></i>
+            <span>{{signalCount}}</span>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>{{activeCount}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+{
+  "_id": "omini_arm_eh777l8",
+  "name": "Escudo de Hihi'irokane",
+  "tier": "L",
+  "category": "armors",
+  "subcategory": "shield",
+  "set_id": "solar_set",
+  "description": "Um escudo redondo que reflete a luz solar com intensidade ofuscante.",
+  "stats": { "ac": 5, "rd": 5 },
+  "effects": [{ "type": "active", "name": "Reflexo Solar", "description": "Cega inimigos em um cone de 9m por 1 rodada." }]
+}

@@ -1,0 +1,10 @@
+{
+  "_id": "omini_cons_mm333u1",
+  "name": "Mapa de Masmorra",
+  "tier": "U",
+  "category": "consumables",
+  "subcategory": "utility",
+  "description": "Um mapa detalhado que revela os arredores da masmorra atual.",
+  "meta": { "stackable": false, "value": 1200 },
+  "foundry": { "command": "reveal_fog" }
+}

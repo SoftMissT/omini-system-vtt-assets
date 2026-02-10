@@ -1,0 +1,9 @@
+{
+  "_id": "omini_skill_rb777l2",
+  "name": "Ferreiro Rúnico",
+  "tier": "L",
+  "category": "skills",
+  "subcategory": "profession",
+  "description": "Mestre na criação e fusão de itens mágicos. Permite extrair runas de equipamentos.",
+  "stats": { "fusion_success_rate": "+25%" }
+}

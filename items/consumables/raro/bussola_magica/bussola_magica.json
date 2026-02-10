@@ -1,0 +1,10 @@
+{
+  "_id": "omini_cons_bm555r1",
+  "name": "Bússola Mágica",
+  "tier": "R",
+  "category": "consumables",
+  "subcategory": "utility",
+  "description": "Uma bússola que aponta para a localização do Boss de Andar.",
+  "meta": { "stackable": false, "value": 2500 },
+  "foundry": { "command": "track_boss" }
+}

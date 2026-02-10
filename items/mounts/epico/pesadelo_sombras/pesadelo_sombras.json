@@ -1,0 +1,10 @@
+{
+  "_id": "omini_mnt_ps666e2",
+  "name": "Pesadelo das Sombras",
+  "tier": "E",
+  "category": "mounts",
+  "type": "land",
+  "description": "Um corcel negro com crina de fogo azul e cascos que queimam o chão.",
+  "stats": { "speed": "15m", "capacity": 1 },
+  "effects": [{ "type": "passive", "name": "Atropelar", "description": "Dano de fogo ao passar por inimigos (2d6)." }]
+}

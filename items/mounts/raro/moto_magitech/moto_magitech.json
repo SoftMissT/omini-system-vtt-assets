@@ -1,0 +1,9 @@
+{
+  "_id": "omini_mnt_mm555r6",
+  "name": "Moto Magitech Light-Speed",
+  "tier": "R",
+  "category": "mounts",
+  "type": "vehicle",
+  "description": "Veículo de duas rodas movido a cristais de mana.",
+  "stats": { "speed": "24m (Estrada)", "noise": "Alto" }
+}
