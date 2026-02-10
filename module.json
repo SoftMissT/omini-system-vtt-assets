@@ -2,7 +2,7 @@
   "id": "omini-system-vtt",
   "title": "Omini System VTT",
   "description": "Sistema de animes 100% gratuito focado em mundos como SAO e Manhwas. Criado por SoftMissT com apoio de IAs (Claude, Gemini, Midjourney, Obsidian, ChatGPT, Manus AI).",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [
     {
       "name": "SoftMissT"
@@ -50,11 +50,6 @@
     "scripts/core/asset-manager.js",
     "scripts/core/gemini-service.js",
     "scripts/huds/synthesis-core.js",
-    "scripts/huds/nexus-exchange.js",
-    "scripts/huds/power-ark.js",
-    "scripts/huds/void-vault.js",
-    "scripts/huds/chronicle-engine.js",
-    "scripts/sheets/origin-matrix.js",
     "scripts/main.js"
   ],
   "url": "https://github.com/SoftMissT/omini-system-vtt-assets",

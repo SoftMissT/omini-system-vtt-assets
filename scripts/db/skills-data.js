@@ -211,5 +211,138 @@ export const SKILL_DB = [
             cooldown: 10,
             lore: "Fusão: God Step + Metavision."
         }
+    },
+    // --- 🌊 WATER BREATHING (Respiração da Água) ---
+    {
+        name: "Ichi no Kata: Minamo Giri",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_1.webp",
+        system: {
+            tier: "tier1",
+            category: "breathing",
+            description: "Primeira Forma: Corte d'Água Superficial. Golpe horizontal fluido. +2 Acerto após avanço.",
+            cost: "1-6 PC",
+            damage: "1d6 - 2d6"
+        }
+    },
+    {
+        name: "Ni no Kata: Mizu Guruma",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_2.webp",
+        system: {
+            tier: "tier1",
+            category: "breathing",
+            description: "Segunda Forma: Roda d'Água. Salto com giro vertical. Empurra 1.5m.",
+            cost: "2-5 PC",
+            damage: "1d8 - 2d8"
+        }
+    },
+    {
+        name: "San no Kata: Ryūryū Mai",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_3.webp",
+        system: {
+            tier: "tier2",
+            category: "breathing",
+            description: "Terceira Forma: Dança da Corrente Rápida. Não provoca ataques de oportunidade.",
+            cost: "3-6 PC",
+            damage: "2x 1d4 - 2x 1d10"
+        }
+    },
+    {
+        name: "Shi no Kata: Uchishio",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_4.webp",
+        system: {
+            tier: "tier2",
+            category: "breathing",
+            description: "Quarta Forma: Maré Crescente. Cortes consecutivos.",
+            cost: "3-6 PC",
+            damage: "3x 1d4 - 3x 1d10"
+        }
+    },
+    {
+        name: "Go no Kata: Kanten no Jiu",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_5.webp",
+        system: {
+            tier: "tier2",
+            category: "breathing",
+            description: "Quinta Forma: Chuva Abençoada. Morte instantânea em rendidos/low HP.",
+            cost: "2-5 PC",
+            damage: "2d6 - 3d6 (Mercy)"
+        }
+    },
+    {
+        name: "Roku no Kata: Nejire Uzu",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_6.webp",
+        system: {
+            tier: "tier2",
+            category: "breathing",
+            description: "Sexta Forma: Redemoinho. Atordoa inimigos em raio de 3m.",
+            cost: "4-7 PC",
+            damage: "1d8 - 2d8 (AoE)"
+        }
+    },
+    {
+        name: "Shichi no Kata: Shizuku Hamonzuki",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_7.webp",
+        system: {
+            tier: "tier3",
+            category: "breathing",
+            description: "Sétima Forma: Estocada Ondulada. Bloqueio preciso como Reação.",
+            cost: "3-6 PC",
+            damage: "Defense Only"
+        }
+    },
+    {
+        name: "Hachi no Kata: Takitsubo",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_8.webp",
+        system: {
+            tier: "tier3",
+            category: "breathing",
+            description: "Oitava Forma: Jarro de Cachoeira. Dano dobrado em caídos.",
+            cost: "4-7 PC",
+            damage: "1d10 - 2d10"
+        }
+    },
+    {
+        name: "Ku no Kata: Suiryū Shibuki",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_9.webp",
+        system: {
+            tier: "tier1", // Movement util
+            category: "breathing",
+            description: "Nona Forma: Fluxo de Água Caos. Ignora terreno difícil, anda na água.",
+            cost: "2-5 PC",
+            damage: "-"
+        }
+    },
+    {
+        name: "Jū no Kata: Seisei Ruten",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_10.webp",
+        system: {
+            tier: "god", // Ultimate
+            category: "breathing",
+            description: "Décima Forma: Dragão da Mudança. Dano aumenta a cada acerto. Mergulho final devastador.",
+            cost: "10-14 PC + Fluxo",
+            damage: "Combo + 2d10/3d10"
+        }
+    },
+    {
+        name: "Jū Ichi no Kata: Nagi",
+        type: "skill",
+        img: "modules/omini-system-assets/assets/icons/skills/water/form_11.webp",
+        system: {
+            tier: "god", // Tomioka Style
+            category: "breathing",
+            description: "Décima Primeira Forma: Calmaria. Anula ataques completamente.",
+            cost: "6-15 PC",
+            damage: "Nullify"
+        }
     }
 ];

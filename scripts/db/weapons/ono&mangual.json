@@ -1,0 +1,28 @@
+{
+  "name": "Ono & Mangual",
+  "type": "item",
+  "img": "modules/omini-system-assets/assets/icons/weapons/ono_mangual.webp",
+  "system": {
+    "description": "Um machado de guerra em uma ponta e uma esfera de ferro espinhosa na outra, conectados por uma longa corrente de Nichirin puro.",
+    "type": "melee",
+    "damage": {
+      "base": 9,
+      "attribute": "sao_cor",
+      "type": "Cortante/Contundente"
+    },
+    "crit": 20,
+    "range": "4.5m",
+    "properties": ["PESADA"]
+  },
+  "flags": {
+    "sao_omini_weapons_": {
+      "skills": {
+        "passiva": "Zona de Impacto: Ameaça 4.5m para ADO.",
+        "ativa": "Esmagamento Duplo",
+        "cost": 3,
+        "resource": "sao_stamina",
+        "effect": "Dois ataques, ignora escudo, teste COR CD 14 ou Derrubado."
+      }
+    }
+  }
+}
