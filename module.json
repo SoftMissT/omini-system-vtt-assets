@@ -47,6 +47,7 @@
   ],
   "esmodules": [
     "scripts/core/omni-core.js",
+    "scripts/core/omni-db.js",
     "scripts/core/asset-manager.js",
     "scripts/core/gemini-service.js",
     "scripts/utils/db-loader.js",

@@ -2,16 +2,19 @@
  * 📂 OMNI-SYSTEM: Database & Compendium Loader
  * Handles synchronization between script files and Foundry Compendiums.
  */
+import { OMNI_DB } from "../core/omni-db.js";
 
 export class OmniDbLoader {
     /**
      * Main entry point for database initialization.
      */
     static async load() {
-        console.log("🌌 OMNI-SYSTEM | Inciando carga de base de dados...");
+        console.log("🌌 OMNI-SYSTEM | Iniciando carga de base de dados...");
         
         if (game.user.isGM) {
             await this.seedMacros();
+            await this.seedItems();
+            await this.seedSkills();
             await this.checkAssets();
         }
         
@@ -19,14 +22,14 @@ export class OmniDbLoader {
     }
 
     /**
-     * Seeds the 'omini-macros' compendium with scripts from the module.
+     * Seeds the 'omini-macros' compendium.
      */
     static async seedMacros() {
         const pack = game.packs.get("omini-system-vtt.omini-macros");
-        if (!pack) {
-            console.warn("⚠️ Compêndio 'omini-macros' não encontrado.");
-            return;
-        }
+        if (!pack) return;
+
+        // Ensure index is loaded
+        await pack.getIndex();
 
         const macrosToSeed = [
             {
@@ -50,15 +53,47 @@ export class OmniDbLoader {
             const existing = pack.index.find(m => m.name === macroData.name);
             if (!existing) {
                 console.log(`✨ Semeando macro: ${macroData.name}`);
-                const macro = await Macro.create({
-                    name: macroData.name,
+                await Macro.create({
+                    ...macroData,
                     type: "script",
-                    command: macroData.command,
-                    img: macroData.img,
                     ownership: { default: CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER }
-                });
-                await pack.importDocument(macro);
-                await macro.delete(); // Clean up from the world, keep in compendium
+                }, { pack: pack.collection });
+            }
+        }
+    }
+
+    /**
+     * Seeds the 'omini-items' compendium.
+     */
+    static async seedItems() {
+        const pack = game.packs.get("omini-system-vtt.omini-items");
+        if (!pack) return;
+        await pack.getIndex();
+
+        const itemsToSeed = [...OMNI_DB.weapons, ...OMNI_DB.materials, ...OMNI_DB.shop];
+
+        for (const itemData of itemsToSeed) {
+            const existing = pack.index.find(i => i.name === itemData.name);
+            if (!existing) {
+                console.log(`✨ Semeando item: ${itemData.name}`);
+                await Item.create(itemData, { pack: pack.collection });
+            }
+        }
+    }
+
+    /**
+     * Seeds the 'omini-skills' compendium.
+     */
+    static async seedSkills() {
+        const pack = game.packs.get("omini-system-vtt.omini-skills");
+        if (!pack) return;
+        await pack.getIndex();
+
+        for (const skillData of OMNI_DB.skills) {
+            const existing = pack.index.find(i => i.name === skillData.name);
+            if (!existing) {
+                console.log(`✨ Semeando skill: ${skillData.name}`);
+                await Item.create(skillData, { pack: pack.collection });
             }
         }
     }
@@ -69,7 +104,7 @@ export class OmniDbLoader {
     static async checkAssets() {
         const assetsModule = game.modules.get("omini-system-assets");
         if (!assetsModule?.active) {
-            ui.notifications.error("⚠️ Módulo 'omini-system-assets' NÃO ENCONTRADO ou INATIVO. A interface pode apresentar falhas de ícones.");
+            ui.notifications.error("⚠️ Módulo 'omini-system-assets' NÃO ENCONTRADO ou INATIVO.");
         }
     }
 }
