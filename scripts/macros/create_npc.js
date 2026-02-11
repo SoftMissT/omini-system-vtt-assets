@@ -22,8 +22,29 @@ const createNPC = async (config) => {
     // ... more dialogues can be expanded
   };
 
-  const stats = config.stats;
   const level = config.level;
+  const con = 10 + level / 2; // Atributo base presumido para NPCs
+
+  // [GOHAN] - HP Formula Phase 1/2
+  let hp;
+  if (level <= 20) {
+    const picosBonus = Math.floor(level / 4) * (con * 5);
+    hp = 50 + con * level + picosBonus;
+  } else {
+    const hpAt20 = 50 + con * 20 + 5 * con * 5;
+    hp = hpAt20 + (level - 20) * (50 + con * 10);
+  }
+
+  const typeMult = { merchant: 1.2, quest: 1.0, trainer: 1.5, rival: 2.0 };
+  const mult = typeMult[config.type] || 1.0;
+
+  const stats = {
+    hp: Math.floor(hp * mult),
+    mana: Math.floor(50 * level * mult),
+    atk: Math.floor((50 + level * 15) * mult),
+    def: Math.floor((30 + level * 8) * mult),
+    spd: Math.floor(10 + level / 2),
+  };
 
   const npcData = {
     name: config.name,
@@ -35,7 +56,9 @@ const createNPC = async (config) => {
         role: config.type,
         title: config.title,
         hp: stats.hp,
+        hp_max: stats.hp,
         mana: stats.mana,
+        mana_max: stats.mana,
         atk: stats.atk,
         def: stats.def,
         spd: stats.spd,
@@ -55,32 +78,32 @@ const createNPC = async (config) => {
     },
     flags: {
       world: {
-        omni_npc: true,
-        created_at: Date.now(),
+        omni_v102_npc: true,
+        omni_v102_data: {
+          created_at: Date.now(),
+          con_base: con,
+        },
       },
     },
   };
 
-  // [SINON] - CSB Integration: Link to global template
-  // Custom System Builder uses system.template ID to link to a sheet structure
+  // [SINON] - CSB Integration
   const template = game.items.find(
     (i) => i.name === "OMNI_NPC_TEMPLATE" && i.type === "template",
   );
-  if (template) {
-    npcData.system.template = template.id;
-  }
+  if (template) npcData.system.template = template.id;
 
   const npc = await Actor.create(npcData);
   if (!npc) return ui.notifications.error("Erro ao criar NPC!");
 
-  // [MAKO] - Compendium Spawn Macro
+  // [MAKO] - Compendium Macro
   if (config.toCompendium) {
-    const macroName = `Invocação: ${npc.name}`;
+    const macroName = `Spawn ${npc.name}`;
     const commandText = `
 (async () => {
     const data = ${JSON.stringify(npcData, null, 2)};
     const actor = await Actor.create(data);
-    ui.notifications.info(\`NPC \${actor.name} invocado!\`);
+    ui.notifications.info(\`NPC \${actor.name} materializado!\`);
     actor.sheet.render(true);
 })();`;
 
@@ -103,11 +126,10 @@ const createNPC = async (config) => {
         img: npc.img,
       });
       await pack.importDocument(macro);
-      ui.notifications.info(`Macro salva no compêndio ${pack.metadata.label}`);
     }
   }
 
-  ui.notifications.info(`✅ NPC ${npc.name} criado em Atores!`);
+  ui.notifications.info(`✅ NPC ${npc.name} criado!`);
   npc.sheet.render(true);
 };
 
