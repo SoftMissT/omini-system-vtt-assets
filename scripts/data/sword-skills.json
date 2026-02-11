@@ -1,0 +1,52 @@
+{
+  "skills": [
+    {
+      "id": "linear",
+      "name": "Linear",
+      "tier": 1,
+      "momentum": 1,
+      "damage": "1d8 + @atk",
+      "afterDelay": 0.5,
+      "description": "Estocada reta básica"
+    },
+    {
+      "id": "vorpal_strike",
+      "name": "Vorpal Strike",
+      "tier": 2,
+      "momentum": 2,
+      "damage": "2d6 + @atk",
+      "afterDelay": 1.0,
+      "effect": "posture_break"
+    },
+    {
+      "id": "horizontal_square",
+      "name": "Horizontal Square",
+      "tier": 3,
+      "momentum": 3,
+      "damage": "4d6 + @atk",
+      "hits": 4,
+      "afterDelay": 2.0,
+      "aoe": true
+    },
+    {
+      "id": "starburst_stream",
+      "name": "Starburst Stream",
+      "tier": 5,
+      "momentum": 10,
+      "damage": "16d4 + @atk",
+      "hits": 16,
+      "afterDelay": 5.0,
+      "risk": "collapse",
+      "requirement": "dual_blades"
+    },
+    {
+      "id": "the_eclipse",
+      "name": "The Eclipse",
+      "tier": 6,
+      "momentum": 15,
+      "damage": "special",
+      "narrative": true,
+      "description": "Dano escala com Conviction + HP perdido"
+    }
+  ]
+}

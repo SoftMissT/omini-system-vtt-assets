@@ -1,0 +1,54 @@
+{
+  "bankais": [
+    {
+      "id": "tensa_zangetsu",
+      "name": "Tensa Zangetsu",
+      "wielder": "Ichigo Kurosaki",
+      "multiplier": 5,
+      "duration": 10,
+      "cost": 70,
+      "color": "#000000"
+    },
+    {
+      "id": "senbonzakura_kageyoshi",
+      "name": "Senbonzakura Kageyoshi",
+      "wielder": "Byakuya Kuchiki",
+      "multiplier": 8,
+      "duration": 12,
+      "cost": 75,
+      "color": "#ff69b4"
+    }
+  ],
+  "kiTransforms": [
+    {
+      "id": "ssj",
+      "name": "Super Saiyan",
+      "multiplier": 50,
+      "color": "#ffff00"
+    },
+    {
+      "id": "ssj2",
+      "name": "Super Saiyan 2",
+      "multiplier": 100,
+      "color": "#ffffaa"
+    }
+  ],
+  "domains": [
+    {
+      "id": "unlimited_void",
+      "name": "Muryō Kūsho (Vazio Infinito)",
+      "user": "Satoru Gojo",
+      "color": "#9900ff",
+      "effect": "sure_hit",
+      "radius": 30
+    },
+    {
+      "id": "malevolent_shrine",
+      "name": "Fukuma Mizushi (Santuário Malevolente)",
+      "user": "Sukuna",
+      "color": "#ff0000",
+      "effect": "sure_hit",
+      "radius": 30
+    }
+  ]
+}

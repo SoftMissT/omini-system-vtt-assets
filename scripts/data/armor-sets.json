@@ -1,0 +1,42 @@
+{
+  "sets": [
+    {
+      "id": "leather_set",
+      "name": "Conjunto de Couro Reforçado",
+      "class": "light",
+      "ac": 1,
+      "dodge": 2,
+      "price": 100,
+      "rarity": "common"
+    },
+    {
+      "id": "chainmail_set",
+      "name": "Conjunto de Malha",
+      "class": "medium",
+      "ac": 3,
+      "rd": 1,
+      "price": 500,
+      "rarity": "uncommon"
+    },
+    {
+      "id": "plate_set",
+      "name": "Armadura Completa",
+      "class": "heavy",
+      "ac": 5,
+      "rd": 3,
+      "price": 2000,
+      "rarity": "rare"
+    },
+    {
+      "id": "divine_vestments",
+      "name": "Vestes Divinas",
+      "class": "conceptual",
+      "ac": "dynamic",
+      "price": 5000,
+      "rarity": "legendary",
+      "requirement": {
+        "esp": 5
+      }
+    }
+  ]
+}
