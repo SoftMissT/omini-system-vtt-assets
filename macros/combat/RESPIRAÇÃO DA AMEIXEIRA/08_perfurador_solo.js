@@ -1,1 +1,55 @@
-(async()=>{const actor=canvas.tokens.controlled[0]?.actor||game.user.character;if(!actor)return ui.notifications.error("❌!");const cfg={nome:"Oitava Forma: Perfurador de Solo",jp:"Hachi no Kata: Tsuchi Ugachi",tipo:"Ação Padrão",cor:"#A6535A",niveis:[{n:1,d:"1d8",c:2},{n:2,d:"1d10",c:3},{n:3,d:"1d12",c:4},{n:4,d:"2d8",c:6}]};const lvl=await new Promise(r=>{new Dialog({title:"���",content:`<div style="background:#0a0a0f;padding:15px;border:2px solid ${cfg.cor}"><h2 style="color:${cfg.cor}">${cfg.nome}</h2>${cfg.niveis.map(n=>`<p>Nv${n.n}: ${n.d} | ${n.c}PC</p>`).join('')}<p style="color:#FFD700">⚡ Gastar 2 Raízes = Crítico automático!</p></div>`,buttons:{n1:{label:"Nv1",callback:()=>r(0)},n2:{label:"Nv2",callback:()=>r(1)},n3:{label:"Nv3",callback:()=>r(2)},n4:{label:"Nv4",callback:()=>r(3)}}}).render(!0)});const sel=cfg.niveis[lvl],pc=actor.system.props?.pc?.value||0;if(pc<sel.c)return ui.notifications.error("❌!");const raizes=actor.system.props?.raizes?.value||0;const gastarRaizes=raizes>=2?await Dialog.confirm({title:"Gastar 2 Raízes?",content:"<p>Crítico automático se gastar 2 Raízes!</p>"}):false;const corpo=actor.system.props?.corpo?.value||0,formula=`${sel.d}+${corpo}`,roll=await new Roll(formula).evaluate();let danoFinal=roll.total;if(gastarRaizes){danoFinal*=2;await actor.update({"system.props.raizes.value":raizes-2});}game.dice3d&&await game.dice3d.showForRoll(roll,game.user,!0);await actor.update({"system.props.pc.value":pc-sel.c});const chat=`<div style="background:linear-gradient(135deg,#0a0a0f,#1a1a2e);border:2px solid ${cfg.cor};border-radius:12px;padding:15px"><h2 style="color:${cfg.cor};text-align:center">��� ${cfg.nome}</h2><div style="background:rgba(166,83,90,0.1);padding:10px;text-align:center"><div style="font-size:32px;color:#FFD700;font-weight:bold">${danoFinal}</div>${gastarRaizes?'<div style="color:#FF2B4A;font-size:18px;margin-top:5px">⚡ CRÍTICO! (2 Raízes)</div>':''}</div><div style="background:rgba(166,83,90,0.2);padding:8px;margin-top:10px"><strong>⚡</strong> Ignora Resistência de Armaduras (Perfurante)</div></div>`;await ChatMessage.create({speaker:ChatMessage.getSpeaker({actor}),content:chat});ui.notifications.info(`��� ${danoFinal}`)})();
+(async () => {
+  const actor = canvas.tokens.controlled[0]?.actor || game.user.character;
+  if (!actor) return ui.notifications.error("❌!");
+  const cfg = {
+    nome: "Oitava Forma: Perfurador de Solo",
+    jp: "Hachi no Kata: Tsuchi Ugachi",
+    tipo: "Ação Padrão",
+    cor: "#A6535A",
+    niveis: [
+      { n: 1, d: "1d8", c: 2 },
+      { n: 2, d: "1d10", c: 3 },
+      { n: 3, d: "1d12", c: 4 },
+      { n: 4, d: "2d8", c: 6 },
+    ],
+  };
+  const lvl = await new Promise((r) => {
+    new Dialog({
+      title: "���",
+      content: `<div style="background:#0a0a0f;padding:15px;border:2px solid ${cfg.cor}"><h2 style="color:${cfg.cor}">${cfg.nome}</h2>${cfg.niveis.map((n) => `<p>Nv${n.n}: ${n.d} | ${n.c}PC</p>`).join("")}<p style="color:#FFD700">⚡ Gastar 2 Raízes = Crítico automático!</p></div>`,
+      buttons: {
+        n1: { label: "Nv1", callback: () => r(0) },
+        n2: { label: "Nv2", callback: () => r(1) },
+        n3: { label: "Nv3", callback: () => r(2) },
+        n4: { label: "Nv4", callback: () => r(3) },
+      },
+    }).render(!0);
+  });
+  const sel = cfg.niveis[lvl],
+    pc = actor.system.props?.pc?.value || 0;
+  if (pc < sel.c) return ui.notifications.error("❌!");
+  const raizes = actor.system.props?.raizes?.value || 0;
+  const gastarRaizes =
+    raizes >= 2
+      ? await Dialog.confirm({
+          title: "Gastar 2 Raízes?",
+          content: "<p>Crítico automático se gastar 2 Raízes!</p>",
+        })
+      : false;
+  const corpo = actor.system.props?.corpo?.value || 0,
+    formula = `${sel.d}+${corpo}`,
+    roll = await new Roll(formula).evaluate();
+  let danoFinal = roll.total;
+  if (gastarRaizes) {
+    danoFinal *= 2;
+    await actor.update({ "system.props.raizes.value": raizes - 2 });
+  }
+  game.dice3d && (await game.dice3d.showForRoll(roll, game.user, !0));
+  await actor.update({ "system.props.pc.value": pc - sel.c });
+  const chat = `<div style="background:linear-gradient(135deg,#0a0a0f,#1a1a2e);border:2px solid ${cfg.cor};border-radius:12px;padding:15px"><h2 style="color:${cfg.cor};text-align:center">��� ${cfg.nome}</h2><div style="background:rgba(166,83,90,0.1);padding:10px;text-align:center"><div style="font-size:32px;color:#FFD700;font-weight:bold">${danoFinal}</div>${gastarRaizes ? '<div style="color:#FF2B4A;font-size:18px;margin-top:5px">⚡ CRÍTICO! (2 Raízes)</div>' : ""}</div><div style="background:rgba(166,83,90,0.2);padding:8px;margin-top:10px"><strong>⚡</strong> Ignora Resistência de Armaduras (Perfurante)</div></div>`;
+  await ChatMessage.create({
+    speaker: ChatMessage.getSpeaker({ actor }),
+    content: chat,
+  });
+  ui.notifications.info(`��� ${danoFinal}`);
+})();

@@ -1,1 +1,52 @@
-(async()=>{const actor=canvas.tokens.controlled[0]?.actor||game.user.character;if(!actor)return ui.notifications.error("âŒ Token!");const cfg={nome:"Segunda Forma: Roda d'Ãgua",jp:"Ni no Kata: Mizu Guruma",tipo:"AÃ§Ã£o PadrÃ£o",cor:"#048ABF",niveis:[{n:1,d:"1d8",c:2},{n:2,d:"1d10",c:3},{n:3,d:"2d6",c:4},{n:4,d:"2d8",c:5}]};const lvl=await new Promise(r=>{new Dialog({title:"í¼Š NÃ­vel",content:`<div style="background:#0a0a0f;padding:15px;border:2px solid ${cfg.cor};border-radius:8px"><h2 style="color:${cfg.cor};text-align:center">${cfg.nome}</h2><p style="color:#aaa;text-align:center">${cfg.jp}</p>${cfg.niveis.map(n=>`<p style="color:#fff"><strong style="color:${cfg.cor}">Nv${n.n}:</strong> ${n.d} | ${n.c}PC</p>`).join('')}</div>`,buttons:{n1:{label:"Nv1(2PC)",callback:()=>r(0)},n2:{label:"Nv2(3PC)",callback:()=>r(1)},n3:{label:"Nv3(4PC)",callback:()=>r(2)},n4:{label:"Nv4(5PC)",callback:()=>r(3)}}}).render(!0)});const sel=cfg.niveis[lvl],pc=actor.system.props?.pc?.value||0;if(pc<sel.c)return ui.notifications.error("âŒ PC!");const corpo=actor.system.props?.corpo?.value||0,formula=`${sel.d}+${corpo}`,roll=await new Roll(formula).evaluate();game.dice3d&&await game.dice3d.showForRoll(roll,game.user,!0);await actor.update({"system.props.pc.value":pc-sel.c});const chat=`<div style="background:linear-gradient(135deg,#0a0a0f,#1a1a2e);border:2px solid ${cfg.cor};border-radius:12px;padding:15px"><h2 style="color:${cfg.cor};text-align:center;text-shadow:0 0 10px ${cfg.cor}">í¼Š ${cfg.nome}</h2><p style="color:#aaa;text-align:center">${cfg.jp}</p><div style="background:rgba(4,138,191,0.1);padding:10px;border-radius:8px;text-align:center"><div style="font-size:32px;color:#FFD700;font-weight:bold">${roll.total}</div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div style="background:rgba(255,215,0,0.1);padding:8px;border-radius:6px;text-align:center"><div style="color:#FFD700">Tipo</div><div style="color:#fff">${cfg.tipo}</div></div><div style="background:rgba(255,43,74,0.1);padding:8px;border-radius:6px;text-align:center"><div style="color:#FF2B4A">Custo</div><div style="color:#fff">${sel.c}PC</div></div></div><div style="background:rgba(4,138,191,0.2);padding:8px;margin-top:10px"><strong>âš¡</strong> +3m movimento | Empurra 1.5m</div><div style="background:rgba(255,215,0,0.1);padding:8px;margin-top:10px"><strong style="color:#FFD700">í²§ Passiva</strong><br>Cascata/Correnteza/VÃ³rtice</div></div>`;await ChatMessage.create({speaker:ChatMessage.getSpeaker({actor}),content:chat});game.modules.get("sequencer")?.active&&canvas.tokens.controlled[0]&&new Sequence().effect().file("jb2a.water_splash.blue").atLocation(canvas.tokens.controlled[0]).scale(1.2).duration(2000).play().catch(()=>{});ui.notifications.info(`í¼Š ${roll.total}`)})();
+(async () => {
+  const actor = canvas.tokens.controlled[0]?.actor || game.user.character;
+  if (!actor) return ui.notifications.error("âŒ Token!");
+  const cfg = {
+    nome: "Segunda Forma: Roda d'Ãgua",
+    jp: "Ni no Kata: Mizu Guruma",
+    tipo: "AÃ§Ã£o PadrÃ£o",
+    cor: "#048ABF",
+    niveis: [
+      { n: 1, d: "1d8", c: 2 },
+      { n: 2, d: "1d10", c: 3 },
+      { n: 3, d: "2d6", c: 4 },
+      { n: 4, d: "2d8", c: 5 },
+    ],
+  };
+  const lvl = await new Promise((r) => {
+    new Dialog({
+      title: "ï¿½ï¿½ï¿½ NÃ­vel",
+      content: `<div style="background:#0a0a0f;padding:15px;border:2px solid ${cfg.cor};border-radius:8px"><h2 style="color:${cfg.cor};text-align:center">${cfg.nome}</h2><p style="color:#aaa;text-align:center">${cfg.jp}</p>${cfg.niveis.map((n) => `<p style="color:#fff"><strong style="color:${cfg.cor}">Nv${n.n}:</strong> ${n.d} | ${n.c}PC</p>`).join("")}</div>`,
+      buttons: {
+        n1: { label: "Nv1(2PC)", callback: () => r(0) },
+        n2: { label: "Nv2(3PC)", callback: () => r(1) },
+        n3: { label: "Nv3(4PC)", callback: () => r(2) },
+        n4: { label: "Nv4(5PC)", callback: () => r(3) },
+      },
+    }).render(!0);
+  });
+  const sel = cfg.niveis[lvl],
+    pc = actor.system.props?.pc?.value || 0;
+  if (pc < sel.c) return ui.notifications.error("âŒ PC!");
+  const corpo = actor.system.props?.corpo?.value || 0,
+    formula = `${sel.d}+${corpo}`,
+    roll = await new Roll(formula).evaluate();
+  game.dice3d && (await game.dice3d.showForRoll(roll, game.user, !0));
+  await actor.update({ "system.props.pc.value": pc - sel.c });
+  const chat = `<div style="background:linear-gradient(135deg,#0a0a0f,#1a1a2e);border:2px solid ${cfg.cor};border-radius:12px;padding:15px"><h2 style="color:${cfg.cor};text-align:center;text-shadow:0 0 10px ${cfg.cor}">ï¿½ï¿½ï¿½ ${cfg.nome}</h2><p style="color:#aaa;text-align:center">${cfg.jp}</p><div style="background:rgba(4,138,191,0.1);padding:10px;border-radius:8px;text-align:center"><div style="font-size:32px;color:#FFD700;font-weight:bold">${roll.total}</div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div style="background:rgba(255,215,0,0.1);padding:8px;border-radius:6px;text-align:center"><div style="color:#FFD700">Tipo</div><div style="color:#fff">${cfg.tipo}</div></div><div style="background:rgba(255,43,74,0.1);padding:8px;border-radius:6px;text-align:center"><div style="color:#FF2B4A">Custo</div><div style="color:#fff">${sel.c}PC</div></div></div><div style="background:rgba(4,138,191,0.2);padding:8px;margin-top:10px"><strong>âš¡</strong> +3m movimento | Empurra 1.5m</div><div style="background:rgba(255,215,0,0.1);padding:8px;margin-top:10px"><strong style="color:#FFD700">ï¿½ï¿½ï¿½ Passiva</strong><br>Cascata/Correnteza/VÃ³rtice</div></div>`;
+  await ChatMessage.create({
+    speaker: ChatMessage.getSpeaker({ actor }),
+    content: chat,
+  });
+  game.modules.get("sequencer")?.active &&
+    canvas.tokens.controlled[0] &&
+    new Sequence()
+      .effect()
+      .file("jb2a.water_splash.blue")
+      .atLocation(canvas.tokens.controlled[0])
+      .scale(1.2)
+      .duration(2000)
+      .play()
+      .catch(() => {});
+  ui.notifications.info(`ï¿½ï¿½ï¿½ ${roll.total}`);
+})();

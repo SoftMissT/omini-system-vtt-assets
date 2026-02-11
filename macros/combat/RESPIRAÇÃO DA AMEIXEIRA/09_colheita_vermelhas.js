@@ -1,1 +1,54 @@
-(async()=>{const actor=canvas.tokens.controlled[0]?.actor||game.user.character;if(!actor)return ui.notifications.error("❌!");const cfg={nome:"Nona Forma: Colheita de Raízes Vermelhas",jp:"Ku no Kata: Akai Ne no Shūkaku",tipo:"Ação Completa",cor:"#A6535A",niveis:[{n:1,d:"1d6",cone:"4.5m",c:5},{n:2,d:"1d8",cone:"4.5m",c:7},{n:3,d:"1d10",cone:"6m",c:9},{n:4,d:"2d6",cone:"6m",c:12}]};const lvl=await new Promise(r=>{new Dialog({title:"��� Drenagem",content:`<div style="background:#0a0a0f;padding:15px;border:2px solid ${cfg.cor}"><h2 style="color:${cfg.cor}">${cfg.nome}</h2>${cfg.niveis.map(n=>`<p>Nv${n.n}: ${n.d} cone ${n.cone} | ${n.c}PC</p>`).join('')}</div>`,buttons:{n1:{label:"Nv1",callback:()=>r(0)},n2:{label:"Nv2",callback:()=>r(1)},n3:{label:"Nv3",callback:()=>r(2)},n4:{label:"Nv4",callback:()=>r(3)}}}).render(!0)});const sel=cfg.niveis[lvl],pc=actor.system.props?.pc?.value||0;if(pc<sel.c)return ui.notifications.error("❌!");const corpo=actor.system.props?.corpo?.value||0,formula=`${sel.d}+${corpo}`,roll=await new Roll(formula).evaluate();game.dice3d&&await game.dice3d.showForRoll(roll,game.user,!0);await actor.update({"system.props.pc.value":pc-sel.c});const inimigosAtingidos=await new Dialog({title:"Inimigos Atingidos",content:"<p>Quantos inimigos foram atingidos?</p>",buttons:{um:{label:"1",callback:()=>1},dois:{label:"2",callback:()=>2},tres:{label:"3",callback:()=>3},quatro:{label:"4+",callback:()=>4}},default:"um"}).render(true);const curaTotal=inimigosAtingidos*2;const chat=`<div style="background:linear-gradient(135deg,#0a0a0f,#1a1a2e);border:2px solid ${cfg.cor};border-radius:12px;padding:15px"><h2 style="color:${cfg.cor};text-align:center">��� ${cfg.nome}</h2><div style="background:rgba(166,83,90,0.1);padding:10px;text-align:center"><div style="font-size:32px;color:#FF2B4A;font-weight:bold">${roll.total} Dano</div><div style="color:#2EFF7A;font-size:24px;margin-top:5px">+${curaTotal} PV Cura</div></div><div style="background:rgba(46,255,122,0.2);padding:8px;margin-top:10px"><strong>⚡</strong> Cone ${sel.cone} | Cura 2PV por inimigo<br>Inimigos não recuperam PV próx. turno</div></div>`;await ChatMessage.create({speaker:ChatMessage.getSpeaker({actor}),content:chat});ui.notifications.info(`��� Drenagem: ${roll.total} | Cura: ${curaTotal}`)})();
+(async () => {
+  const actor = canvas.tokens.controlled[0]?.actor || game.user.character;
+  if (!actor) return ui.notifications.error("❌!");
+  const cfg = {
+    nome: "Nona Forma: Colheita de Raízes Vermelhas",
+    jp: "Ku no Kata: Akai Ne no Shūkaku",
+    tipo: "Ação Completa",
+    cor: "#A6535A",
+    niveis: [
+      { n: 1, d: "1d6", cone: "4.5m", c: 5 },
+      { n: 2, d: "1d8", cone: "4.5m", c: 7 },
+      { n: 3, d: "1d10", cone: "6m", c: 9 },
+      { n: 4, d: "2d6", cone: "6m", c: 12 },
+    ],
+  };
+  const lvl = await new Promise((r) => {
+    new Dialog({
+      title: "��� Drenagem",
+      content: `<div style="background:#0a0a0f;padding:15px;border:2px solid ${cfg.cor}"><h2 style="color:${cfg.cor}">${cfg.nome}</h2>${cfg.niveis.map((n) => `<p>Nv${n.n}: ${n.d} cone ${n.cone} | ${n.c}PC</p>`).join("")}</div>`,
+      buttons: {
+        n1: { label: "Nv1", callback: () => r(0) },
+        n2: { label: "Nv2", callback: () => r(1) },
+        n3: { label: "Nv3", callback: () => r(2) },
+        n4: { label: "Nv4", callback: () => r(3) },
+      },
+    }).render(!0);
+  });
+  const sel = cfg.niveis[lvl],
+    pc = actor.system.props?.pc?.value || 0;
+  if (pc < sel.c) return ui.notifications.error("❌!");
+  const corpo = actor.system.props?.corpo?.value || 0,
+    formula = `${sel.d}+${corpo}`,
+    roll = await new Roll(formula).evaluate();
+  game.dice3d && (await game.dice3d.showForRoll(roll, game.user, !0));
+  await actor.update({ "system.props.pc.value": pc - sel.c });
+  const inimigosAtingidos = await new Dialog({
+    title: "Inimigos Atingidos",
+    content: "<p>Quantos inimigos foram atingidos?</p>",
+    buttons: {
+      um: { label: "1", callback: () => 1 },
+      dois: { label: "2", callback: () => 2 },
+      tres: { label: "3", callback: () => 3 },
+      quatro: { label: "4+", callback: () => 4 },
+    },
+    default: "um",
+  }).render(true);
+  const curaTotal = inimigosAtingidos * 2;
+  const chat = `<div style="background:linear-gradient(135deg,#0a0a0f,#1a1a2e);border:2px solid ${cfg.cor};border-radius:12px;padding:15px"><h2 style="color:${cfg.cor};text-align:center">��� ${cfg.nome}</h2><div style="background:rgba(166,83,90,0.1);padding:10px;text-align:center"><div style="font-size:32px;color:#FF2B4A;font-weight:bold">${roll.total} Dano</div><div style="color:#2EFF7A;font-size:24px;margin-top:5px">+${curaTotal} PV Cura</div></div><div style="background:rgba(46,255,122,0.2);padding:8px;margin-top:10px"><strong>⚡</strong> Cone ${sel.cone} | Cura 2PV por inimigo<br>Inimigos não recuperam PV próx. turno</div></div>`;
+  await ChatMessage.create({
+    speaker: ChatMessage.getSpeaker({ actor }),
+    content: chat,
+  });
+  ui.notifications.info(`��� Drenagem: ${roll.total} | Cura: ${curaTotal}`);
+})();

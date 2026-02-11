@@ -1,1 +1,67 @@
-(async()=>{const actor=canvas.tokens.controlled[0]?.actor||game.user.character;if(!actor)return ui.notifications.error("❌!");const cfg={nome:"Décima Forma: Dragão da Mudança",jp:"Jū no Kata: Seisei Ruten",tipo:"Ação Completa",cor:"#048ABF",niveis:[{n:2,atk:"3x1d8",merg:"2d10",c:10,flux:3},{n:3,atk:"3x1d10",merg:"2d12",c:12,flux:3},{n:4,atk:"3x1d12",merg:"3d10",c:14,flux:3}]};const nivel=actor.system.props?.nivel?.value||1;if(nivel<14)return ui.notifications.error("❌ Requer nível 14+!");const lvl=await new Promise(r=>{new Dialog({title:"��� ULTIMATE",content:`<div style="background:#0a0a0f;padding:15px;border:3px solid ${cfg.cor}"><h2 style="color:${cfg.cor}">${cfg.nome}</h2><p style="color:#FFD700">⚠️ FORMA SUPREMA</p>${cfg.niveis.map(n=>`<p>Nv${n.n}: ${n.atk}+${n.merg} | ${n.c}PC+${n.flux}Fluxo</p>`).join('')}</div>`,buttons:{n2:{label:"Nv2",callback:()=>r(0)},n3:{label:"Nv3",callback:()=>r(1)},n4:{label:"Nv4",callback:()=>r(2)}}}).render(!0)});const sel=cfg.niveis[lvl],pc=actor.system.props?.pc?.value||0,fluxo=actor.system.props?.fluxo?.value||0;if(pc<sel.c||fluxo<sel.flux)return ui.notifications.error("❌ Recursos!");const corpo=actor.system.props?.corpo?.value||0,dadoAtk=sel.atk.split('x')[1],r1=await new Roll(`${dadoAtk}+${corpo}`).evaluate(),r2=await new Roll(`${dadoAtk}+${corpo}`).evaluate(),r3=await new Roll(`${dadoAtk}+${corpo}`).evaluate(),bonusMerg=Math.floor((r1.total+r2.total+r3.total)/10),mergFormula=`${sel.merg}+${corpo}+${bonusMerg}d6`,rMerg=await new Roll(mergFormula).evaluate(),total=r1.total+r2.total+r3.total+rMerg.total;game.dice3d&&(await game.dice3d.showForRoll(r1,game.user,!0),await game.dice3d.showForRoll(r2,game.user,!0),await game.dice3d.showForRoll(r3,game.user,!0),await game.dice3d.showForRoll(rMerg,game.user,!0));await actor.update({"system.props.pc.value":pc-sel.c,"system.props.fluxo.value":fluxo-sel.flux});const chat=`<div style="background:linear-gradient(135deg,#0a0a0f,#1a1a2e);border:3px solid #FFD700;border-radius:12px;padding:15px;box-shadow:0 0 30px rgba(255,215,0,0.5)"><h2 style="color:#FFD700;text-align:center;text-shadow:0 0 15px #FFD700">⚡ ${cfg.nome} ⚡</h2><p style="color:#aaa;text-align:center;font-style:italic">${cfg.jp}</p><div style="background:rgba(255,215,0,0.2);padding:15px;border-radius:8px;text-align:center"><div style="font-size:42px;color:#FFD700;font-weight:bold;text-shadow:0 0 20px #FFD700">${total}</div><div style="color:#aaa">Atk: ${r1.total}+${r2.total}+${r3.total} | Mergulho: ${rMerg.total}</div></div><div style="background:rgba(4,138,191,0.2);padding:10px;margin-top:10px;border-left:4px solid ${cfg.cor}"><strong style="color:${cfg.cor}">��� DRAGÃO AQUÁTICO</strong><br>9m movimento | Derruba+Atordoa 1 turno | TR Física CD ${10+corpo}</div></div>`;await ChatMessage.create({speaker:ChatMessage.getSpeaker({actor}),content:chat});game.modules.get("sequencer")?.active&&canvas.tokens.controlled[0]&&new Sequence().effect().file("jb2a.water_splash.blue").atLocation(canvas.tokens.controlled[0]).scale(2.5).duration(3000).play().catch(()=>{});ui.notifications.warn(`⚡ DRAGÃO DA MUDANÇA: ${total} ⚡`)})();
+(async () => {
+  const actor = canvas.tokens.controlled[0]?.actor || game.user.character;
+  if (!actor) return ui.notifications.error("❌!");
+  const cfg = {
+    nome: "Décima Forma: Dragão da Mudança",
+    jp: "Jū no Kata: Seisei Ruten",
+    tipo: "Ação Completa",
+    cor: "#048ABF",
+    niveis: [
+      { n: 2, atk: "3x1d8", merg: "2d10", c: 10, flux: 3 },
+      { n: 3, atk: "3x1d10", merg: "2d12", c: 12, flux: 3 },
+      { n: 4, atk: "3x1d12", merg: "3d10", c: 14, flux: 3 },
+    ],
+  };
+  const nivel = actor.system.props?.nivel?.value || 1;
+  if (nivel < 14) return ui.notifications.error("❌ Requer nível 14+!");
+  const lvl = await new Promise((r) => {
+    new Dialog({
+      title: "��� ULTIMATE",
+      content: `<div style="background:#0a0a0f;padding:15px;border:3px solid ${cfg.cor}"><h2 style="color:${cfg.cor}">${cfg.nome}</h2><p style="color:#FFD700">⚠️ FORMA SUPREMA</p>${cfg.niveis.map((n) => `<p>Nv${n.n}: ${n.atk}+${n.merg} | ${n.c}PC+${n.flux}Fluxo</p>`).join("")}</div>`,
+      buttons: {
+        n2: { label: "Nv2", callback: () => r(0) },
+        n3: { label: "Nv3", callback: () => r(1) },
+        n4: { label: "Nv4", callback: () => r(2) },
+      },
+    }).render(!0);
+  });
+  const sel = cfg.niveis[lvl],
+    pc = actor.system.props?.pc?.value || 0,
+    fluxo = actor.system.props?.fluxo?.value || 0;
+  if (pc < sel.c || fluxo < sel.flux)
+    return ui.notifications.error("❌ Recursos!");
+  const corpo = actor.system.props?.corpo?.value || 0,
+    dadoAtk = sel.atk.split("x")[1],
+    r1 = await new Roll(`${dadoAtk}+${corpo}`).evaluate(),
+    r2 = await new Roll(`${dadoAtk}+${corpo}`).evaluate(),
+    r3 = await new Roll(`${dadoAtk}+${corpo}`).evaluate(),
+    bonusMerg = Math.floor((r1.total + r2.total + r3.total) / 10),
+    mergFormula = `${sel.merg}+${corpo}+${bonusMerg}d6`,
+    rMerg = await new Roll(mergFormula).evaluate(),
+    total = r1.total + r2.total + r3.total + rMerg.total;
+  game.dice3d &&
+    (await game.dice3d.showForRoll(r1, game.user, !0),
+    await game.dice3d.showForRoll(r2, game.user, !0),
+    await game.dice3d.showForRoll(r3, game.user, !0),
+    await game.dice3d.showForRoll(rMerg, game.user, !0));
+  await actor.update({
+    "system.props.pc.value": pc - sel.c,
+    "system.props.fluxo.value": fluxo - sel.flux,
+  });
+  const chat = `<div style="background:linear-gradient(135deg,#0a0a0f,#1a1a2e);border:3px solid #FFD700;border-radius:12px;padding:15px;box-shadow:0 0 30px rgba(255,215,0,0.5)"><h2 style="color:#FFD700;text-align:center;text-shadow:0 0 15px #FFD700">⚡ ${cfg.nome} ⚡</h2><p style="color:#aaa;text-align:center;font-style:italic">${cfg.jp}</p><div style="background:rgba(255,215,0,0.2);padding:15px;border-radius:8px;text-align:center"><div style="font-size:42px;color:#FFD700;font-weight:bold;text-shadow:0 0 20px #FFD700">${total}</div><div style="color:#aaa">Atk: ${r1.total}+${r2.total}+${r3.total} | Mergulho: ${rMerg.total}</div></div><div style="background:rgba(4,138,191,0.2);padding:10px;margin-top:10px;border-left:4px solid ${cfg.cor}"><strong style="color:${cfg.cor}">��� DRAGÃO AQUÁTICO</strong><br>9m movimento | Derruba+Atordoa 1 turno | TR Física CD ${10 + corpo}</div></div>`;
+  await ChatMessage.create({
+    speaker: ChatMessage.getSpeaker({ actor }),
+    content: chat,
+  });
+  game.modules.get("sequencer")?.active &&
+    canvas.tokens.controlled[0] &&
+    new Sequence()
+      .effect()
+      .file("jb2a.water_splash.blue")
+      .atLocation(canvas.tokens.controlled[0])
+      .scale(2.5)
+      .duration(3000)
+      .play()
+      .catch(() => {});
+  ui.notifications.warn(`⚡ DRAGÃO DA MUDANÇA: ${total} ⚡`);
+})();

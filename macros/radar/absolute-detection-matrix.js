@@ -455,139 +455,130 @@ const MATRIX_TEMPLATE = `
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
-class AbsoluteDetectionMatrix extends HandlebarsApplicationMixin(
-  ApplicationV2,
-) {
-  constructor(options = {}) {
-    super(options);
-    this.scanInterval = null;
-    this.targetToken = null;
-    this.layers = {
-      physical: { active: true, unlocked: true },
-      spiritual: { active: false, unlocked: false },
-      conceptual: { active: false, unlocked: false },
+export class AbsoluteDetectionMatrix extends HandlebarsApplicationMixin(ApplicationV2) {
+    constructor(options = {}) {
+        super(options);
+        this.scanInterval = null;
+        this.targetToken = null;
+        this.layers = {
+            physical: { active: true, unlocked: true },
+            spiritual: { active: false, unlocked: false },
+            conceptual: { active: false, unlocked: false }
+        };
+        this.counts = { physical: 0, hostile: 0, elite: 0, loot: 0 };
+        this.detectedEntities = new Map();
+    }
+
+    static DEFAULT_OPTIONS = {
+        id: APP_ID,
+        tag: "div",
+        classes: ["omni-system", "adm-window"],
+        window: { title: "ABSOLUTE DETECTION MATRIX", icon: "fa-solid fa-radar", resizable: false, minimizable: true },
+        position: { width: 340, height: 'auto', right: 20, top: 80 }
     };
-    this.counts = { physical: 0, hostile: 0, elite: 0, loot: 0 };
-    this.detectedEntities = new Map();
-  }
 
-  static DEFAULT_OPTIONS = {
-    id: APP_ID,
-    tag: "div",
-    classes: ["omni-system", "adm-window"],
-    window: {
-      title: "ABSOLUTE DETECTION MATRIX",
-      icon: "fa-solid fa-radar",
-      resizable: false,
-      minimizable: true,
-    },
-    position: { width: 340, height: "auto", right: 20, top: 80 },
-  };
-
-  static PARTS = {
-    main: { template: "templates/radar/adm-matrix.hbs" },
-  };
-
-  async _prepareContext(options) {
-    this.targetToken = this._findTargetToken();
-    const ranges = this._calculateRanges();
-    return {
-      hasToken: !!this.targetToken,
-      layers: this.layers,
-      ranges: ranges,
-      counts: this.counts,
-      totalEntities: this.detectedEntities.size,
+    static PARTS = {
+        main: { template: "templates/radar/adm-matrix.hbs" }
     };
-  }
 
-  _onRender(context, options) {
-    if (!document.getElementById("adm-css")) {
-      const style = document.createElement("style");
-      style.id = "adm-css";
-      style.innerHTML = MATRIX_CSS;
-      document.head.appendChild(style);
+    async _prepareContext(options) {
+        this.targetToken = this._findTargetToken();
+        const ranges = this._calculateRanges();
+        return {
+            hasToken: !!this.targetToken,
+            layers: this.layers,
+            ranges: ranges,
+            counts: this.counts,
+            totalEntities: this.detectedEntities.size
+        };
     }
-    this._startScanning();
-  }
 
-  _onClose() {
-    if (this.scanInterval) clearInterval(this.scanInterval);
-  }
-
-  _findTargetToken() {
-    const controlled = canvas.tokens.controlled;
-    if (controlled.length > 0) return controlled[0];
-    if (game.user.character) {
-      const tokens = game.user.character.getActiveTokens();
-      if (tokens.length > 0) return tokens[0];
+    _onRender(context, options) {
+        if (!document.getElementById('adm-css')) {
+            const style = document.createElement('style');
+            style.id = 'adm-css';
+            style.innerHTML = MATRIX_CSS;
+            document.head.appendChild(style);
+        }
+        this._startScanning();
     }
-    return null;
-  }
 
-  _calculateRanges() {
-    if (!this.targetToken?.actor)
-      return { physical: 25, spiritual: 0, conceptual: 999 };
-    const attrs = this.targetToken.actor.system?.atributos || {};
-    const mente = attrs.MENTE || 5;
-    const espirito = attrs.ESPIRITO || 0;
-    return { physical: mente * 5, spiritual: espirito * 10, conceptual: 999 };
-  }
-
-  _startScanning() {
-    if (this.scanInterval) clearInterval(this.scanInterval);
-    this.scanInterval = setInterval(() => this._scan(), 2000);
-  }
-
-  _scan() {
-    const container = this.element.querySelector("#adm-blips");
-    if (!container) return;
-    if (!this.targetToken) {
-      container.innerHTML = "";
-      this.detectedEntities.clear();
-      return;
+    _onClose() {
+        if (this.scanInterval) clearInterval(this.scanInterval);
     }
-    container.innerHTML = "";
-    this.counts = { physical: 0, hostile: 0, elite: 0, loot: 0 };
-    const origin = this.targetToken.center;
-    const gridSize = canvas.grid.size || 100;
-    const ranges = this._calculateRanges();
-    const maxDist = ranges.physical * gridSize;
 
-    for (const token of canvas.tokens.placeables) {
-      if (token === this.targetToken || (!token.visible && !game.user.isGM))
-        continue;
-      const dx = token.center.x - origin.x;
-      const dy = token.center.y - origin.y;
-      const dist = Math.hypot(dx, dy);
-      if (dist / gridSize > ranges.physical) continue;
-
-      const sig = this._classify(token, dist / gridSize);
-      this._renderBlip(container, sig, dx, dy, maxDist);
+    _findTargetToken() {
+        const controlled = canvas.tokens.controlled;
+        if (controlled.length > 0) return controlled[0];
+        if (game.user.character) {
+            const tokens = game.user.character.getActiveTokens();
+            if (tokens.length > 0) return tokens[0];
+        }
+        return null;
     }
-  }
 
-  _classify(token, dist) {
-    const actor = token.actor;
-    let type = "physical";
-    if (actor) {
-      const name = actor.name.toLowerCase();
-      const hp = actor.system?.attributes?.hp?.max || 0;
-      if (name.includes("baú") || name.includes("chest")) type = "opportunity";
-      else if (hp > 200) type = "elite";
-      else if (token.document.disposition === -1) type = "hostile";
+    _calculateRanges() {
+        if (!this.targetToken?.actor) return { physical: 25, spiritual: 0, conceptual: 999 };
+        const attrs = this.targetToken.actor.system?.atributos || {};
+        const mente = attrs.MENTE || 5;
+        const espirito = attrs.ESPIRITO || 0;
+        return { physical: mente * 5, spiritual: espirito * 10, conceptual: 999 };
     }
-    this.counts[type === "opportunity" ? "loot" : type]++;
-    return { id: token.id, name: token.name, type };
-  }
 
-  _renderBlip(container, sig, dx, dy, maxDist) {
-    const scale = 130 / maxDist;
-    const blip = document.createElement("div");
-    blip.className = `adm-blip ${sig.type}`;
-    blip.style.left = `calc(50% + ${dx * scale}px)`;
-    blip.style.top = `calc(50% + ${dy * scale}px)`;
-    container.appendChild(blip);
-  }
+    _startScanning() {
+        if (this.scanInterval) clearInterval(this.scanInterval);
+        this.scanInterval = setInterval(() => this._scan(), 2000);
+    }
+
+    _scan() {
+        const container = this.element.querySelector('#adm-blips');
+        if (!container) return;
+        if (!this.targetToken) {
+            container.innerHTML = '';
+            this.detectedEntities.clear();
+            return;
+        }
+        container.innerHTML = '';
+        this.counts = { physical: 0, hostile: 0, elite: 0, loot: 0 };
+        const origin = this.targetToken.center;
+        const gridSize = canvas.grid.size || 100;
+        const ranges = this._calculateRanges();
+        const maxDist = ranges.physical * gridSize;
+
+        for (const token of canvas.tokens.placeables) {
+            if (token === this.targetToken || (!token.visible && !game.user.isGM)) continue;
+            const dx = token.center.x - origin.x;
+            const dy = token.center.y - origin.y;
+            const dist = Math.hypot(dx, dy);
+            if (dist / gridSize > ranges.physical) continue;
+
+            const sig = this._classify(token, dist / gridSize);
+            this._renderBlip(container, sig, dx, dy, maxDist);
+        }
+    }
+
+    _classify(token, dist) {
+        const actor = token.actor;
+        let type = 'physical';
+        if (actor) {
+            const name = actor.name.toLowerCase();
+            const hp = actor.system?.attributes?.hp?.max || 0;
+            if (name.includes('baú') || name.includes('chest')) type = 'opportunity';
+            else if (hp > 200) type = 'elite';
+            else if (token.document.disposition === -1) type = 'hostile';
+        }
+        this.counts[type === 'opportunity' ? 'loot' : type]++;
+        return { id: token.id, name: token.name, type };
+    }
+
+    _renderBlip(container, sig, dx, dy, maxDist) {
+        const scale = 130 / maxDist;
+        const blip = document.createElement('div');
+        blip.className = `adm-blip ${sig.type}`;
+        blip.style.left = `calc(50% + ${dx * scale}px)`;
+        blip.style.top = `calc(50% + ${dy * scale}px)`;
+        container.appendChild(blip);
+    }
 }
 
 window.AbsoluteDetectionMatrix = AbsoluteDetectionMatrix;
