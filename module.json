@@ -10,7 +10,7 @@
   ],
   "compatibility": {
     "minimum": "12",
-    "verified": "12.331",
+    "verified": "13",
     "maximum": "13"
   },
   "relationships": {
@@ -71,8 +71,8 @@
     "styles/jjk-sheet.css"
   ],
   "socket": true,
-  "url": "https://github.com/SoftMissT/omini-system-vtt-assets",
-  "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt-assets/main/module.json",
-  "download": "https://github.com/SoftMissT/omini-system-vtt-assets/archive/refs/heads/main.zip",
+  "url": "https://github.com/SoftMissT/omini-system-vtt",
+  "manifest": "https://raw.githubusercontent.com/SoftMissT/omini-system-vtt/main/module.json",
+  "download": "https://github.com/SoftMissT/omini-system-vtt/archive/refs/heads/main.zip",
   "license": "LICENSE"
 }
