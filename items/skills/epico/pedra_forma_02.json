@@ -1,0 +1,15 @@
+{
+  "_id": "pedra_forma_02",
+  "name": "⛰️ NI NO KATA: Cume Celestial",
+  "type": "skill",
+  "img": "assets/icons/skills/demon-slayer/cume_celestial.webp",
+  "system": {
+    "description": "<p>Pinça dupla. CD Res.Física 10+ESP → Desorientado.</p>",
+    "activation": "bonus",
+    "color": "#8D6027",
+    "tier": "E",
+    "nivel": 1,
+    "custo": {"1":2,"2":4,"3":6,"4":8},
+    "dano": {"1":"1d8+1d6","2":"1d10+1d8","3":"1d12+1d10","4":"2d8+1d12"}
+  }
+}

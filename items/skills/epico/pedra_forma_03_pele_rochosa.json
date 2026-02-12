@@ -1,0 +1,22 @@
+{
+  "_id": "pedra_forma_03",
+  "name": "Ìª°Ô∏è SAN NO KATA: Defesa da Pele Rochosa",
+  "type": "skill",
+  "img": "assets/icons/skills/demon-slayer/pele_rochosa.webp",
+  "system": {
+    "description": "<div class='respiracao-pedra-forma'><h3>ÌºÄ GANKU NO HADAE</h3><p>V√≥rtex defensivo</p><table><tr><th>Nv</th><th>Block</th><th>PC</th></tr><tr><td>1</td><td>+2</td><td>1</td></tr><tr><td>2</td><td>+4</td><td>2</td></tr><tr><td>3</td><td>+6</td><td>4</td></tr><tr><td>4</td><td>+8</td><td>6</td></tr></table></div>",
+    "activation": "reaction",
+    "actionType": "reaction",
+    "trigger": "Quando alvo de ataque",
+    "color": "#8D6027",
+    "tier": "E",
+    "nivel_atual": 1,
+    "custo_pc": {"1": 1, "2": 2, "3": 4, "4": 6},
+    "bloqueio": {"1": 2, "2": 4, "3": 6, "4": 8},
+    "meta": {
+      "series": "demon-slayer",
+      "respiracao": "pedra",
+      "forma": 3
+    }
+  }
+}

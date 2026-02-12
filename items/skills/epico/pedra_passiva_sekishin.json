@@ -1,0 +1,17 @@
+{
+  "_id": "pedra_passiva_sekishin",
+  "name": "��� SEKISHIN (Passiva)",
+  "type": "skill",
+  "img": "assets/icons/skills/demon-slayer/sekishin.webp",
+  "system": {
+    "description": "<div class='respiracao-pedra-passiva'><h3>⛰️ SEKISHIN - Corpo Monolítico</h3><p><strong>Gatilho:</strong> Mover ≤1.5m no turno</p><ul><li><strong>Inamovível:</strong> Imune a Empurrado/Derrubado</li><li><strong>Pele de Ferro:</strong> RD = Mod.CORPO</li><li><strong>Reverberação:</strong> Bloqueio corpo a corpo → Desequilibrado</li></ul></div>",
+    "activation": "passive",
+    "color": "#8D6027",
+    "tier": "E",
+    "category": "skill",
+    "meta": {
+      "series": "demon-slayer",
+      "respiracao": "pedra"
+    }
+  }
+}

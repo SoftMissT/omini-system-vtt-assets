@@ -1,0 +1,21 @@
+{
+  "_id": "pedra_forma_01",
+  "name": "Ì∞â ICHI NO KATA: Serpente G√™mea da Rocha",
+  "type": "skill",
+  "img": "assets/icons/skills/demon-slayer/serpente_gemea.webp",
+  "system": {
+    "description": "<div class='respiracao-pedra-forma'><h3>Ìº™Ô∏è JAMONGAN - S≈åKYOKU</h3><p>Redemoinho de pedras. <strong>Ignora 3 Bloqueio</strong></p><table><tr><th>Nv</th><th>Dano</th><th>PC</th></tr><tr><td>1</td><td>1d10</td><td>2</td></tr><tr><td>2</td><td>1d12</td><td>4</td></tr><tr><td>3</td><td>2d8</td><td>6</td></tr><tr><td>4</td><td>2d10</td><td>7</td></tr></table></div>",
+    "activation": "action",
+    "actionType": "standard",
+    "color": "#8D6027",
+    "tier": "E",
+    "nivel_atual": 1,
+    "custo_pc": {"1": 2, "2": 4, "3": 6, "4": 7},
+    "dano": {"1": "1d10", "2": "1d12", "3": "2d8", "4": "2d10"},
+    "meta": {
+      "series": "demon-slayer",
+      "respiracao": "pedra",
+      "forma": 1
+    }
+  }
+}

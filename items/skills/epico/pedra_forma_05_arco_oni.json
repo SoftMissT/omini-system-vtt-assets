@@ -1,0 +1,22 @@
+{
+  "_id": "pedra_forma_05",
+  "name": "í±¹ GO NO KATA: Arco de Pedra do Oni",
+  "type": "skill",
+  "img": "assets/icons/skills/demon-slayer/arco_oni.webp",
+  "system": {
+    "description": "<div class='respiracao-pedra-ultimate'><h3>âš¡ GARIN GYÅŒBU</h3><p><strong>Requisito: NÃ­vel 3+</strong></p><p>Martelo Divino + Julgamento Celestial</p><p><strong>Efeitos:</strong> Atordoado + Derrubado</p><table><tr><th>Nv</th><th>Dano</th><th>PC</th></tr><tr><td>3</td><td>3d10</td><td>6</td></tr><tr><td>4</td><td>3d12</td><td>9</td></tr></table></div>",
+    "activation": "action",
+    "actionType": "full",
+    "color": "#FFD700",
+    "tier": "L",
+    "nivel_atual": 3,
+    "custo_pc": {"3": 6, "4": 9},
+    "dano": {"3": "3d10", "4": "3d12"},
+    "meta": {
+      "series": "demon-slayer",
+      "respiracao": "pedra",
+      "forma": 5,
+      "ultimate": true
+    }
+  }
+}

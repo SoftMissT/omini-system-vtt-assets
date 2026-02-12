@@ -1,0 +1,21 @@
+{
+  "_id": "pedra_forma_02",
+  "name": "‚õ∞Ô∏è NI NO KATA: Esmagamento do Cume Celestial",
+  "type": "skill",
+  "img": "assets/icons/skills/demon-slayer/cume_celestial.webp",
+  "system": {
+    "description": "<div class='respiracao-pedra-forma'><h3>Ì∫® TENMEN KUDAKI</h3><p>Pin√ßa dupla. CD Res.F√≠sica 10+ESP ‚Üí Desorientado</p><table><tr><th>Nv</th><th>Dano</th><th>PC</th></tr><tr><td>1</td><td>1d8+1d6</td><td>2</td></tr><tr><td>2</td><td>1d10+1d8</td><td>4</td></tr><tr><td>3</td><td>1d12+1d10</td><td>6</td></tr><tr><td>4</td><td>2d8+1d12</td><td>8</td></tr></table></div>",
+    "activation": "bonus",
+    "actionType": "bonus",
+    "color": "#8D6027",
+    "tier": "E",
+    "nivel_atual": 1,
+    "custo_pc": {"1": 2, "2": 4, "3": 6, "4": 8},
+    "dano": {"1": "1d8+1d6", "2": "1d10+1d8", "3": "1d12+1d10", "4": "2d8+1d12"},
+    "meta": {
+      "series": "demon-slayer",
+      "respiracao": "pedra",
+      "forma": 2
+    }
+  }
+}

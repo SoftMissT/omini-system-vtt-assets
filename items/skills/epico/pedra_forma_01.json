@@ -1,0 +1,15 @@
+{
+  "_id": "pedra_forma_01",
+  "name": "í°‰ ICHI NO KATA: Serpente GÃªmea",
+  "type": "skill",
+  "img": "assets/icons/skills/demon-slayer/serpente_gemea.webp",
+  "system": {
+    "description": "<p>Redemoinho de pedras. Ignora 3 de Bloqueio.</p>",
+    "activation": "action",
+    "color": "#8D6027",
+    "tier": "E",
+    "nivel": 1,
+    "custo": {"1":2,"2":4,"3":6,"4":7},
+    "dano": {"1":"1d10","2":"1d12","3":"2d8","4":"2d10"}
+  }
+}

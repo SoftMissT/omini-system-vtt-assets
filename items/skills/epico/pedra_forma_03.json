@@ -1,0 +1,15 @@
+{
+  "_id": "pedra_forma_03",
+  "name": "Ìª°Ô∏è SAN NO KATA: Pele Rochosa",
+  "type": "skill",
+  "img": "assets/icons/skills/demon-slayer/pele_rochosa.webp",
+  "system": {
+    "description": "<p>V√≥rtex defensivo.</p>",
+    "activation": "reaction",
+    "color": "#8D6027",
+    "tier": "E",
+    "nivel": 1,
+    "custo": {"1":1,"2":2,"3":4,"4":6},
+    "bloqueio": {"1":2,"2":4,"3":6,"4":8}
+  }
+}

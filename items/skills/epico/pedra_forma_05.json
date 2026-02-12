@@ -1,0 +1,15 @@
+{
+  "_id": "pedra_forma_05",
+  "name": "í±¹ GO NO KATA: Arco do Oni",
+  "type": "skill",
+  "img": "assets/icons/skills/demon-slayer/arco_oni.webp",
+  "system": {
+    "description": "<p><strong>Req:</strong> Nv3+. Atordoado + Derrubado.</p>",
+    "activation": "action",
+    "color": "#FFD700",
+    "tier": "L",
+    "nivel": 3,
+    "custo": {"3":6,"4":9},
+    "dano": {"3":"3d10","4":"3d12"}
+  }
+}
