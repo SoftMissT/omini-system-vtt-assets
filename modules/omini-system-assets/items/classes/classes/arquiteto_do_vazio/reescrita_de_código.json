@@ -1,0 +1,18 @@
+{
+    "name": "Reescrita de Código",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/arquiteto_do_vazio/reescrita_de_código.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Arquiteto do Vazio",
+            "skillType": "Active",
+            "rarity": "glitch",
+            "tier": 11,
+            "icCost": 20,
+            "effect": "Change Element",
+            "actionMacro": "reescrita_de_código_action",
+            "description": "<p><strong>[Reescrita de Código]</strong></p><p>Reescreve o tipo de dano recebido (Ex: Fogo -> Cura).</p><p><strong>Custo:</strong> 20</p>"
+        }
+    }
+}

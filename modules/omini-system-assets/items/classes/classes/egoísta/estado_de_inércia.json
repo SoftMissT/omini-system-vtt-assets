@@ -1,0 +1,18 @@
+{
+    "name": "Estado de Inércia",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/egoísta/estado_de_inércia.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Egoísta",
+            "skillType": "Passive",
+            "rarity": "exclusive",
+            "tier": 10,
+            "icCost": 0,
+            "effect": "Debuff",
+            "actionMacro": "estado_de_inércia_action",
+            "description": "<p><strong>[Estado de Inércia]</strong></p><p>Penalidade por altruísmo. Bloqueio de skills.</p><p><strong>Custo:</strong> 0</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Ritual de Nanobots",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/folklore/support/pajé_cyber/ritual_de_nanobots.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Pajé Cyber (Folclore)",
+            "icCost": 15,
+            "damage": "Heal/Repair",
+            "actionMacro": "ritual_de_nanobots_action",
+            "description": "<p><strong>[Ritual de Nanobots]</strong></p><p>Cura e reparo de armaduras.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

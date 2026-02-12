@@ -1,0 +1,18 @@
+{
+    "name": "Nature Unity",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/asgard/classic/alberich/nature_unity.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Alberich (God Warrior)",
+            "icCost": 20,
+            "damage": "Environment",
+            "actionMacro": "nature_unity_action",
+            "description": "<p><strong>[Nature Unity]</strong></p><p>Unidade da Natureza. Controla espíritos.</p><p><strong>Custo:</strong> 20 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

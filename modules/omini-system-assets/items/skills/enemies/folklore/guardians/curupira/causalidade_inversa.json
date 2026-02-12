@@ -1,0 +1,18 @@
+{
+    "name": "Causalidade Inversa",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/folklore/guardians/curupira/causalidade_inversa.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Reaction",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Curupira (Folclore)",
+            "icCost": 15,
+            "damage": "Reflect Attack",
+            "actionMacro": "causalidade_inversa_action",
+            "description": "<p><strong>[Causalidade Inversa]</strong></p><p>Pés virados. Inverte a direção do ataque.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Reaction</p>"
+        }
+    }
+}

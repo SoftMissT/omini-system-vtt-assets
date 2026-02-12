@@ -1,0 +1,18 @@
+{
+    "name": "Freezing Coffin",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/aquarius/freezing_coffin.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Gold Saint (aquarius)",
+            "icCost": 15,
+            "damage": "-",
+            "actionMacro": "freezing_coffin_action",
+            "description": "<p><strong>[Freezing Coffin]</strong></p><p>Esquife de gelo indestrutível.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

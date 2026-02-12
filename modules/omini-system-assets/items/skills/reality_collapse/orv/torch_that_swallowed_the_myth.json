@@ -1,0 +1,18 @@
+{
+    "name": "Torch That Swallowed the Myth",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/reality_collapse/orv/torch_that_swallowed_the_myth.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Story",
+            "rarity": "prismatic",
+            "tier": 12,
+            "source": "Kim Dokja (orv)",
+            "icCost": 50,
+            "damage": "Steal Stat",
+            "actionMacro": "torch_that_swallowed_the_myth_action",
+            "description": "<p><strong>[Torch That Swallowed the Myth]</strong></p><p>Fábula Gigante. Devora a história do inimigo.</p><p><strong>Custo:</strong> 50 IC</p><p><strong>Tipo:</strong> Story</p>"
+        }
+    }
+}

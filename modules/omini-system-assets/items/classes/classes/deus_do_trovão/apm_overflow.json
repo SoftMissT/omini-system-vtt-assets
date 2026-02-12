@@ -1,0 +1,18 @@
+{
+    "name": "APM Overflow",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/deus_do_trovão/apm_overflow.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Deus do Trovão",
+            "skillType": "Meta",
+            "rarity": "hidden",
+            "tier": 10,
+            "icCost": 0,
+            "effect": "Double Speed",
+            "actionMacro": "apm_overflow_action",
+            "description": "<p><strong>[APM Overflow]</strong></p><p>300+ Ações por minuto. Dobra velocidade, depois paralisa.</p><p><strong>Custo:</strong> 0</p>"
+        }
+    }
+}

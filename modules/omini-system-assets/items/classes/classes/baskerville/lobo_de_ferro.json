@@ -1,0 +1,18 @@
+{
+    "name": "Lobo de Ferro",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/baskerville/lobo_de_ferro.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Baskerville",
+            "skillType": "Arts",
+            "rarity": "hidden",
+            "tier": 9,
+            "icCost": 10,
+            "effect": "Vacuum Pull",
+            "actionMacro": "lobo_de_ferro_action",
+            "description": "<p><strong>[Lobo de Ferro]</strong></p><p>Cria vácuo que puxa inimigos.</p><p><strong>Custo:</strong> 10</p>"
+        }
+    }
+}

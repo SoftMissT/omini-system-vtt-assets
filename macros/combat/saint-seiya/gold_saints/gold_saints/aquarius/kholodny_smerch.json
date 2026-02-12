@@ -1,0 +1,18 @@
+{
+    "name": "Kholodny Smerch",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/aquarius/kholodny_smerch.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "rare",
+            "tier": 6,
+            "source": "Gold Saint (aquarius)",
+            "icCost": 12,
+            "damage": "6d8",
+            "actionMacro": "kholodny_smerch_action",
+            "description": "<p><strong>[Kholodny Smerch]</strong></p><p>Tornado de gelo uppercut.</p><p><strong>Custo:</strong> 12 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

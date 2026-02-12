@@ -1,0 +1,18 @@
+{
+    "name": "Boca Abdominal",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/folklore/titans/mapinguari/boca_abdominal.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Reaction",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Mapinguari (Folclore)",
+            "icCost": 15,
+            "damage": "6d10 Drain",
+            "actionMacro": "boca_abdominal_action",
+            "description": "<p><strong>[Boca Abdominal]</strong></p><p>Boca na barriga morde arma. Cura.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Reaction</p>"
+        }
+    }
+}

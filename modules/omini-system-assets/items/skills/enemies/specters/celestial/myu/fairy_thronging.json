@@ -1,0 +1,18 @@
+{
+    "name": "Fairy Thronging",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/specters/celestial/myu/fairy_thronging.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Myu (Specter)",
+            "icCost": 10,
+            "damage": "4d6 Psy",
+            "actionMacro": "fairy_thronging_action",
+            "description": "<p><strong>[Fairy Thronging]</strong></p><p>Borboletas do submundo teleguiadas.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

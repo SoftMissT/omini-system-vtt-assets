@@ -1,0 +1,18 @@
+{
+    "name": "Sekishiki Kisoen",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/cancer/sekishiki_kisoen.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Reaction",
+            "rarity": "rare",
+            "tier": 6,
+            "source": "Gold Saint (cancer)",
+            "icCost": 8,
+            "damage": "-",
+            "actionMacro": "sekishiki_kisoen_action",
+            "description": "<p><strong>[Sekishiki Kisoen]</strong></p><p>Chamas demoníacas que queimam energia.</p><p><strong>Custo:</strong> 8 IC</p><p><strong>Tipo:</strong> Reaction</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Unleashed Power 100",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/reality_collapse/singularities/unleashed_power_100.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Install",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Kaiju No 8 (singularities)",
+            "icCost": 30,
+            "damage": "Massive Str",
+            "actionMacro": "unleashed_power_100_action",
+            "description": "<p><strong>[Unleashed Power 100]</strong></p><p>Liberação total do traje de combate.</p><p><strong>Custo:</strong> 30 IC</p><p><strong>Tipo:</strong> Install</p>"
+        }
+    }
+}

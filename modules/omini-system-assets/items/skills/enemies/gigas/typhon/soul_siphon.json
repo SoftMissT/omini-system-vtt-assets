@@ -1,0 +1,18 @@
+{
+    "name": "Soul Siphon",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/gigas/typhon/soul_siphon.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Typhon (gigas)",
+            "icCost": 15,
+            "damage": "-1d4 Stat",
+            "actionMacro": "soul_siphon_action",
+            "description": "<p><strong>[Soul Siphon]</strong></p><p>Drenagem permanente de atributos.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

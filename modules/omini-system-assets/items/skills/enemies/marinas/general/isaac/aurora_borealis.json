@@ -1,0 +1,18 @@
+{
+    "name": "Aurora Borealis",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/marinas/general/isaac/aurora_borealis.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Isaac (Marina)",
+            "icCost": 15,
+            "damage": "8d8 Cold",
+            "actionMacro": "aurora_borealis_action",
+            "description": "<p><strong>[Aurora Borealis]</strong></p><p>Aurora Boreal. Vento cortante de gelo.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

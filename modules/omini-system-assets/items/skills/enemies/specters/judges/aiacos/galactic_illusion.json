@@ -1,0 +1,18 @@
+{
+    "name": "Galactic Illusion",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/specters/judges/aiacos/galactic_illusion.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Aiacos (Specter)",
+            "icCost": 15,
+            "damage": "6d10 Psy",
+            "actionMacro": "galactic_illusion_action",
+            "description": "<p><strong>[Galactic Illusion]</strong></p><p>Olhos gigantes e distorção espacial.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

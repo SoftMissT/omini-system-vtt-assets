@@ -1,0 +1,18 @@
+{
+    "name": "Crimson Stone",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/scorpio/crimson_stone.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "rare",
+            "tier": 6,
+            "source": "Gold Saint (scorpio)",
+            "icCost": 12,
+            "damage": "6d8",
+            "actionMacro": "crimson_stone_action",
+            "description": "<p><strong>[Crimson Stone]</strong></p><p>Explosão de cristais rubros.</p><p><strong>Custo:</strong> 12 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

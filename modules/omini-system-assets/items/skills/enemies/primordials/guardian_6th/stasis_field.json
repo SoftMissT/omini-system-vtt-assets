@@ -1,0 +1,18 @@
+{
+    "name": "Stasis Field",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/primordials/guardian_6th/stasis_field.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Field",
+            "rarity": "mythic",
+            "tier": 9,
+            "source": "Guardian 6th (primordials)",
+            "icCost": 20,
+            "damage": "-",
+            "actionMacro": "stasis_field_action",
+            "description": "<p><strong>[Stasis Field]</strong></p><p>Cúpula de tempo parado. Ataques congelam.</p><p><strong>Custo:</strong> 20 IC</p><p><strong>Tipo:</strong> Field</p>"
+        }
+    }
+}

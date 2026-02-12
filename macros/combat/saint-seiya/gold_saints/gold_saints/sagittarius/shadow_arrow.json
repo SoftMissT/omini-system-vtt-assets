@@ -1,0 +1,18 @@
+{
+    "name": "Shadow Arrow",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/sagittarius/shadow_arrow.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Bonus",
+            "rarity": "rare",
+            "tier": 6,
+            "source": "Gold Saint (sagittarius)",
+            "icCost": 8,
+            "damage": "-",
+            "actionMacro": "shadow_arrow_action",
+            "description": "<p><strong>[Shadow Arrow]</strong></p><p>Prega a sombra no chão.</p><p><strong>Custo:</strong> 8 IC</p><p><strong>Tipo:</strong> Bonus</p>"
+        }
+    }
+}

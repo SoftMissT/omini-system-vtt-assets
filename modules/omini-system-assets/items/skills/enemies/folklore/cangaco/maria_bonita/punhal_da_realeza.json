@@ -1,0 +1,18 @@
+{
+    "name": "Punhal da Realeza",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/folklore/cangaco/maria_bonita/punhal_da_realeza.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Maria Bonita (Folclore)",
+            "icCost": 18,
+            "damage": "8d8 True",
+            "actionMacro": "punhal_da_realeza_action",
+            "description": "<p><strong>[Punhal da Realeza]</strong></p><p>Corte na garganta. Anti-Regeneração.</p><p><strong>Custo:</strong> 18 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

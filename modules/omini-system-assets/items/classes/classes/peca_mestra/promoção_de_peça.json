@@ -1,0 +1,18 @@
+{
+    "name": "Promoção de Peça",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/peca_mestra/promoção_de_peça.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Peca Mestra",
+            "skillType": "Active",
+            "rarity": "exclusive",
+            "tier": 10,
+            "icCost": 15,
+            "effect": "Buff Rank S",
+            "actionMacro": "promoção_de_peça_action",
+            "description": "<p><strong>[Promoção de Peça]</strong></p><p>Transforma aliado em Rainha/Bispo/Torre temporariamente.</p><p><strong>Custo:</strong> 15</p>"
+        }
+    }
+}

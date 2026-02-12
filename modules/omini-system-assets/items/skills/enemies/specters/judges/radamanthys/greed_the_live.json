@@ -1,0 +1,18 @@
+{
+    "name": "Greed The Live",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/specters/judges/radamanthys/greed_the_live.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Bonus",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Radamanthys (Specter)",
+            "icCost": 5,
+            "damage": "True Dmg + Heal",
+            "actionMacro": "greed_the_live_action",
+            "description": "<p><strong>[Greed The Live]</strong></p><p>Dano verdadeiro com roubo de vida.</p><p><strong>Custo:</strong> 5 IC</p><p><strong>Tipo:</strong> Bonus</p>"
+        }
+    }
+}

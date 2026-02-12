@@ -1,0 +1,18 @@
+{
+    "name": "Atomic Thunderbolt",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/sagittarius/atomic_thunderbolt.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Gold Saint (sagittarius)",
+            "icCost": 12,
+            "damage": "8d8",
+            "actionMacro": "atomic_thunderbolt_action",
+            "description": "<p><strong>[Atomic Thunderbolt]</strong></p><p>Múltiplos raios atômicos.</p><p><strong>Custo:</strong> 12 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

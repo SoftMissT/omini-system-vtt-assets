@@ -1,0 +1,18 @@
+{
+    "name": "Chrono Execution",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/aquarius/chrono_execution.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Gold Saint (aquarius)",
+            "icCost": 25,
+            "damage": "-",
+            "actionMacro": "chrono_execution_action",
+            "description": "<p><strong>[Chrono Execution]</strong></p><p>Envelhecimento pelo frio.</p><p><strong>Custo:</strong> 25 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Chrono Catastrophe",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/pallasites/1st_class/aegaeon/chrono_catastrophe.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Aegaeon (pallasites)",
+            "icCost": 22,
+            "damage": "5d10 + Stun",
+            "actionMacro": "chrono_catastrophe_action",
+            "description": "<p><strong>[Chrono Catastrophe]</strong></p><p>Esfera de gravidade e raios.</p><p><strong>Custo:</strong> 22 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

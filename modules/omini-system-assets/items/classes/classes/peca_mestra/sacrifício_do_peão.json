@@ -1,0 +1,18 @@
+{
+    "name": "Sacrifício do Peão",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/peca_mestra/sacrifício_do_peão.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Peca Mestra",
+            "skillType": "Reaction",
+            "rarity": "exclusive",
+            "tier": 10,
+            "icCost": 0,
+            "effect": "Redirect Dmg",
+            "actionMacro": "sacrifício_do_peão_action",
+            "description": "<p><strong>[Sacrifício do Peão]</strong></p><p>Transfere dano fatal para um aliado menor.</p><p><strong>Custo:</strong> 0</p>"
+        }
+    }
+}

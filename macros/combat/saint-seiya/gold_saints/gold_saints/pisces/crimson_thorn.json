@@ -1,0 +1,18 @@
+{
+    "name": "Crimson Thorn",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/pisces/crimson_thorn.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Area",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Gold Saint (pisces)",
+            "icCost": 15,
+            "damage": "8d8",
+            "actionMacro": "crimson_thorn_action",
+            "description": "<p><strong>[Crimson Thorn]</strong></p><p>Sangue transformado em espinhos.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Area</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Fenda Incinerante",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/fusion/fenda_incinerante.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Fusion",
+            "skillType": "Ultimate",
+            "rarity": "glitch",
+            "tier": 12,
+            "icCost": 30,
+            "effect": "Burn + Banish",
+            "actionMacro": "fenda_incinerante_action",
+            "description": "<p><strong>[Fenda Incinerante]</strong></p><p>Fusão: Corte Dimensional + Chama do Purgatório.</p><p><strong>Custo:</strong> 30</p>"
+        }
+    }
+}

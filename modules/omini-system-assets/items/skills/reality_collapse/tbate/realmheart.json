@@ -1,0 +1,18 @@
+{
+    "name": "Realmheart",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/reality_collapse/tbate/realmheart.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Godrune",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Arthur Leywin (tbate)",
+            "icCost": 15,
+            "damage": "Cancel Magic",
+            "actionMacro": "realmheart_action",
+            "description": "<p><strong>[Realmheart]</strong></p><p>Visão de partículas de mana. Cancela feitiços.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Godrune</p>"
+        }
+    }
+}

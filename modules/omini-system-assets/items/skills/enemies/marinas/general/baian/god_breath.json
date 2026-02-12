@@ -1,0 +1,18 @@
+{
+    "name": "God Breath",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/marinas/general/baian/god_breath.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Baian (Marina)",
+            "icCost": 12,
+            "damage": "6d10 Push",
+            "actionMacro": "god_breath_action",
+            "description": "<p><strong>[God Breath]</strong></p><p>Sopro Divino. Parede de ar.</p><p><strong>Custo:</strong> 12 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

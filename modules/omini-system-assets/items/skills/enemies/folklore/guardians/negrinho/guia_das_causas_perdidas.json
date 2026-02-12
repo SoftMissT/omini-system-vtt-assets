@@ -1,0 +1,18 @@
+{
+    "name": "Guia das Causas Perdidas",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/folklore/guardians/negrinho/guia_das_causas_perdidas.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Bonus",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Negrinho (Folclore)",
+            "icCost": 10,
+            "damage": "Advantage",
+            "actionMacro": "guia_das_causas_perdidas_action",
+            "description": "<p><strong>[Guia das Causas Perdidas]</strong></p><p>Lanterna de luz pura. Revela invisíveis.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Bonus</p>"
+        }
+    }
+}

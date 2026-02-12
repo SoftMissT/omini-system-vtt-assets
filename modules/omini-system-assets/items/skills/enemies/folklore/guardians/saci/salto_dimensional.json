@@ -1,0 +1,18 @@
+{
+    "name": "Salto Dimensional",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/folklore/guardians/saci/salto_dimensional.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Reaction",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Saci (Folclore)",
+            "icCost": 5,
+            "damage": "Teleport",
+            "actionMacro": "salto_dimensional_action",
+            "description": "<p><strong>[Salto Dimensional]</strong></p><p>Vira fumaça e teleporta.</p><p><strong>Custo:</strong> 5 IC</p><p><strong>Tipo:</strong> Reaction</p>"
+        }
+    }
+}

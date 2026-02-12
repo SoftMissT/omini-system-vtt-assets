@@ -1,0 +1,18 @@
+{
+    "name": "Biological Clock",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/specters/kairos/biological_clock.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "cursed",
+            "tier": 10,
+            "source": "Kairos (specters)",
+            "icCost": 25,
+            "damage": "Death Save",
+            "actionMacro": "biological_clock_action",
+            "description": "<p><strong>[Biological Clock]</strong></p><p>Para o coração do alvo.</p><p><strong>Custo:</strong> 25 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

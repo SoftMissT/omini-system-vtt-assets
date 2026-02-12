@@ -1,0 +1,18 @@
+{
+    "name": "Hiten Daisenko",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/pallasites/1st_class/gallia/hiten_daisenko.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Gallia (pallasites)",
+            "icCost": 15,
+            "damage": "10d6 Light",
+            "actionMacro": "hiten_daisenko_action",
+            "description": "<p><strong>[Hiten Daisenko]</strong></p><p>Flash de luz divina em área.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

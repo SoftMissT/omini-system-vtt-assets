@@ -1,0 +1,18 @@
+{
+    "name": "Snake Plasma",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/pallasites/2nd_class/dione/snake_plasma.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Dione (pallasites)",
+            "icCost": 12,
+            "damage": "8d8",
+            "actionMacro": "snake_plasma_action",
+            "description": "<p><strong>[Snake Plasma]</strong></p><p>Chicote de plasma que agarra.</p><p><strong>Custo:</strong> 12 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

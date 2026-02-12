@@ -1,0 +1,18 @@
+{
+    "name": "Greatest Horn",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/taurus/greatest_horn.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Limit",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Gold Saint (taurus)",
+            "icCost": 30,
+            "damage": "20d10",
+            "actionMacro": "greatest_horn_action",
+            "description": "<p><strong>[Greatest Horn]</strong></p><p>Ignora 100% da defesa.</p><p><strong>Custo:</strong> 30 IC</p><p><strong>Tipo:</strong> Limit</p>"
+        }
+    }
+}

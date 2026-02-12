@@ -1,0 +1,18 @@
+{
+    "name": "Sekishiki Meikai Ha",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/cancer/sekishiki_meikai_ha.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Gold Saint (cancer)",
+            "icCost": 10,
+            "damage": "-",
+            "actionMacro": "sekishiki_meikai_ha_action",
+            "description": "<p><strong>[Sekishiki Meikai Ha]</strong></p><p>Envia a alma para o Yomotsu.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Ebony Vortex",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/titans/hyperion/ebony_vortex.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Hyperion (titans)",
+            "icCost": 25,
+            "damage": "15d10",
+            "actionMacro": "ebony_vortex_action",
+            "description": "<p><strong>[Ebony Vortex]</strong></p><p>Vórtice de vento negro e asfixia.</p><p><strong>Custo:</strong> 25 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

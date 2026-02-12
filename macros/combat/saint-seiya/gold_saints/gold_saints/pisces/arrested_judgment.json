@@ -1,0 +1,18 @@
+{
+    "name": "Arrested Judgment",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/pisces/arrested_judgment.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Gold Saint (pisces)",
+            "icCost": 18,
+            "damage": "-",
+            "actionMacro": "arrested_judgment_action",
+            "description": "<p><strong>[Arrested Judgment]</strong></p><p>Lanças de trevas.</p><p><strong>Custo:</strong> 18 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

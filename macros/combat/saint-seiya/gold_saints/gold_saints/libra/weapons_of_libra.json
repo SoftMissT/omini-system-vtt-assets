@@ -1,0 +1,18 @@
+{
+    "name": "Weapons of Libra",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/libra/weapons_of_libra.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Passive",
+            "rarity": "legendary",
+            "tier": 9,
+            "source": "Gold Saint (libra)",
+            "icCost": 5,
+            "damage": "-",
+            "actionMacro": "weapons_of_libra_action",
+            "description": "<p><strong>[Weapons of Libra]</strong></p><p>Invoca armas douradas.</p><p><strong>Custo:</strong> 5 IC</p><p><strong>Tipo:</strong> Passive</p>"
+        }
+    }
+}

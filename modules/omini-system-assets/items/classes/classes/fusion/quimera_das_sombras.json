@@ -1,0 +1,18 @@
+{
+    "name": "Quimera das Sombras",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/fusion/quimera_das_sombras.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Fusion",
+            "skillType": "Summon",
+            "rarity": "glitch",
+            "tier": 12,
+            "icCost": 40,
+            "effect": "Rank SSS Unit",
+            "actionMacro": "quimera_das_sombras_action",
+            "description": "<p><strong>[Quimera das Sombras]</strong></p><p>Fusão: Sombra + Besta. Invoca monstro híbrido.</p><p><strong>Custo:</strong> 40</p>"
+        }
+    }
+}

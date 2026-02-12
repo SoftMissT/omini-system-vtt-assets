@@ -1,0 +1,18 @@
+{
+    "name": "Antares",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/scorpio/antares.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 9,
+            "source": "Gold Saint (scorpio)",
+            "icCost": 10,
+            "damage": "100",
+            "actionMacro": "antares_action",
+            "description": "<p><strong>[Antares]</strong></p><p>A 15ª Agulha. Morte.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

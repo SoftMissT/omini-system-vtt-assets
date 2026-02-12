@@ -1,0 +1,18 @@
+{
+    "name": "Tenbu Horin",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/virgo/tenbu_horin.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Field",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Gold Saint (virgo)",
+            "icCost": 30,
+            "damage": "-",
+            "actionMacro": "tenbu_horin_action",
+            "description": "<p><strong>[Tenbu Horin]</strong></p><p>Remove os 5 sentidos. Tesouro do Céu.</p><p><strong>Custo:</strong> 30 IC</p><p><strong>Tipo:</strong> Field</p>"
+        }
+    }
+}

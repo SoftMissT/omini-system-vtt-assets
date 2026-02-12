@@ -1,0 +1,18 @@
+{
+    "name": "Resurrection",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/ophiuchus/resurrection.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Ritual",
+            "rarity": "primordial",
+            "tier": 10,
+            "source": "Gold Saint (ophiuchus)",
+            "icCost": 50,
+            "damage": "-",
+            "actionMacro": "resurrection_action",
+            "description": "<p><strong>[Resurrection]</strong></p><p>Ressuscita um morto.</p><p><strong>Custo:</strong> 50 IC</p><p><strong>Tipo:</strong> Ritual</p>"
+        }
+    }
+}

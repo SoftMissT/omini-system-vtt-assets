@@ -1,0 +1,18 @@
+{
+    "name": "Rewind World",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/specters/kairos/rewind_world.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "primordial",
+            "tier": 11,
+            "source": "Kairos (specters)",
+            "icCost": 40,
+            "damage": "De-Level",
+            "actionMacro": "rewind_world_action",
+            "description": "<p><strong>[Rewind World]</strong></p><p>Reverte o alvo a uma versão mais fraca.</p><p><strong>Custo:</strong> 40 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

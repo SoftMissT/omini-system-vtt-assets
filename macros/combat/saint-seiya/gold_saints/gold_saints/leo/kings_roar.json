@@ -1,0 +1,18 @@
+{
+    "name": "Kings Roar",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/leo/kings_roar.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Bonus",
+            "rarity": "common",
+            "tier": 4,
+            "source": "Gold Saint (leo)",
+            "icCost": 5,
+            "damage": "-",
+            "actionMacro": "kings_roar_action",
+            "description": "<p><strong>[Kings Roar]</strong></p><p>Rugido que paralisa.</p><p><strong>Custo:</strong> 5 IC</p><p><strong>Tipo:</strong> Bonus</p>"
+        }
+    }
+}

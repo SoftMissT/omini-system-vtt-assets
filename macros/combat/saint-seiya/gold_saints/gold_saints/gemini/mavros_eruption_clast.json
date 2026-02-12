@@ -1,0 +1,18 @@
+{
+    "name": "Mavros Eruption Clast",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/gemini/mavros_eruption_clast.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Gold Saint (gemini)",
+            "icCost": 18,
+            "damage": "8d8 + @atk",
+            "actionMacro": "mavros_eruption_clast_action",
+            "description": "<p><strong>[Mavros Eruption Clast]</strong></p><p>Erupção de magma vulcânico.</p><p><strong>Custo:</strong> 18 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

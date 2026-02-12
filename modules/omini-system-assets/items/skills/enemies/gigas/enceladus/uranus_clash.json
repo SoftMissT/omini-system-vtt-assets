@@ -1,0 +1,18 @@
+{
+    "name": "Uranus Clash",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/gigas/enceladus/uranus_clash.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Enceladus (gigas)",
+            "icCost": 18,
+            "damage": "10d10",
+            "actionMacro": "uranus_clash_action",
+            "description": "<p><strong>[Uranus Clash]</strong></p><p>Impacto de vácuo e silêncio.</p><p><strong>Custo:</strong> 18 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

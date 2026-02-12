@@ -1,0 +1,18 @@
+{
+    "name": "Omerta",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/cancer/omerta.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Item",
+            "rarity": "legendary",
+            "tier": 8,
+            "source": "Gold Saint (cancer)",
+            "icCost": 15,
+            "damage": "-",
+            "actionMacro": "omerta_action",
+            "description": "<p><strong>[Omerta]</strong></p><p>Caixão do Silêncio que sela inimigos.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Item</p>"
+        }
+    }
+}

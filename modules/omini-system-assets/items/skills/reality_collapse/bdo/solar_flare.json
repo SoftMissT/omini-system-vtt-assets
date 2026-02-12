@@ -1,0 +1,18 @@
+{
+    "name": "Solar Flare",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/reality_collapse/bdo/solar_flare.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Awakening",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Warrior (bdo)",
+            "icCost": 12,
+            "damage": "Stun/Slow",
+            "actionMacro": "solar_flare_action",
+            "description": "<p><strong>[Solar Flare]</strong></p><p>Investida de espada flamejante.</p><p><strong>Custo:</strong> 12 IC</p><p><strong>Tipo:</strong> Awakening</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Bloody Rose",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/pisces/bloody_rose.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 9,
+            "source": "Gold Saint (pisces)",
+            "icCost": 20,
+            "damage": "20",
+            "actionMacro": "bloody_rose_action",
+            "description": "<p><strong>[Bloody Rose]</strong></p><p>Rosa branca que drena sangue.</p><p><strong>Custo:</strong> 20 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

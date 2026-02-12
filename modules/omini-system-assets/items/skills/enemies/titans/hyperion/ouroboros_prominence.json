@@ -1,0 +1,18 @@
+{
+    "name": "Ouroboros Prominence",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/titans/hyperion/ouroboros_prominence.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "primordial",
+            "tier": 11,
+            "source": "Hyperion (titans)",
+            "icCost": 30,
+            "damage": "12d10",
+            "actionMacro": "ouroboros_prominence_action",
+            "description": "<p><strong>[Ouroboros Prominence]</strong></p><p>Fogo Negro que não cura. Ciclo infinito.</p><p><strong>Custo:</strong> 30 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

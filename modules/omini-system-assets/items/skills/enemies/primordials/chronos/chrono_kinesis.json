@@ -1,0 +1,18 @@
+{
+    "name": "Chrono Kinesis",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/primordials/chronos/chrono_kinesis.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Global",
+            "rarity": "primordial",
+            "tier": 12,
+            "source": "Chronos (primordials)",
+            "icCost": 100,
+            "damage": "ERASURE",
+            "actionMacro": "chrono_kinesis_action",
+            "description": "<p><strong>[Chrono Kinesis]</strong></p><p>O tempo para. O alvo é apagado da existência.</p><p><strong>Custo:</strong> 100 IC</p><p><strong>Tipo:</strong> Global</p>"
+        }
+    }
+}

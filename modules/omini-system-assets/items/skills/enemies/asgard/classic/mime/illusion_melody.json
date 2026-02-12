@@ -1,0 +1,18 @@
+{
+    "name": "Illusion Melody",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/asgard/classic/mime/illusion_melody.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Passive",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Mime (God Warrior)",
+            "icCost": 0,
+            "damage": "Disadvantage",
+            "actionMacro": "illusion_melody_action",
+            "description": "<p><strong>[Illusion Melody]</strong></p><p>Melodia da Ilusão. Imagens residuais.</p><p><strong>Custo:</strong> 0 IC</p><p><strong>Tipo:</strong> Passive</p>"
+        }
+    }
+}

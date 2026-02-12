@@ -1,0 +1,18 @@
+{
+    "name": "Stone Missiles",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/martians/kings/romulus/stone_missiles.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Romulus (martians)",
+            "icCost": 10,
+            "damage": "8d8",
+            "actionMacro": "stone_missiles_action",
+            "description": "<p><strong>[Stone Missiles]</strong></p><p>Mísseis de terra.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Scarlet Needle",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/scorpio/scarlet_needle.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Bonus",
+            "rarity": "epic",
+            "tier": 7,
+            "source": "Gold Saint (scorpio)",
+            "icCost": 2,
+            "damage": "2",
+            "actionMacro": "scarlet_needle_action",
+            "description": "<p><strong>[Scarlet Needle]</strong></p><p>Agulha Escarlate. Acumula stacks.</p><p><strong>Custo:</strong> 2 IC</p><p><strong>Tipo:</strong> Bonus</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Olhos de Fogo",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/folklore/titans/boitatá/olhos_de_fogo.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "primordial",
+            "tier": 11,
+            "source": "Boitatá (Folclore)",
+            "icCost": 20,
+            "damage": "6d8 Blind",
+            "actionMacro": "olhos_de_fogo_action",
+            "description": "<p><strong>[Olhos de Fogo]</strong></p><p>Lasers de 100 olhos. Cegueira.</p><p><strong>Custo:</strong> 20 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

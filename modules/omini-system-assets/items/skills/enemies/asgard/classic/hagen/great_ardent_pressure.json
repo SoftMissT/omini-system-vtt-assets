@@ -1,0 +1,18 @@
+{
+    "name": "Great Ardent Pressure",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/asgard/classic/hagen/great_ardent_pressure.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Hagen (God Warrior)",
+            "icCost": 18,
+            "damage": "12d8 Fire",
+            "actionMacro": "great_ardent_pressure_action",
+            "description": "<p><strong>[Great Ardent Pressure]</strong></p><p>Raio de Fogo vulcânico. Choque térmico.</p><p><strong>Custo:</strong> 18 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

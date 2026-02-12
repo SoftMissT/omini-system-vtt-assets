@@ -1,0 +1,18 @@
+{
+    "name": "Teeth of the Underworld",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/reality_collapse/singularities/teeth_of_the_underworld.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Arts",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Baskerville (singularities)",
+            "icCost": 18,
+            "damage": "7x Cuts",
+            "actionMacro": "teeth_of_the_underworld_action",
+            "description": "<p><strong>[Teeth of the Underworld]</strong></p><p>7 cortes simultâneos invisíveis.</p><p><strong>Custo:</strong> 18 IC</p><p><strong>Tipo:</strong> Arts</p>"
+        }
+    }
+}

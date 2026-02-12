@@ -1,0 +1,18 @@
+{
+    "name": "Prisma de Rejeição",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/fusion/prisma_de_rejeição.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Fusion",
+            "skillType": "Reaction",
+            "rarity": "glitch",
+            "tier": 12,
+            "icCost": 15,
+            "effect": "Reflect 150%",
+            "actionMacro": "prisma_de_rejeição_action",
+            "description": "<p><strong>[Prisma de Rejeição]</strong></p><p>Fusão: Escudo Mana + Espelho. Reflexão pura.</p><p><strong>Custo:</strong> 15</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Cosmic Star Arrow",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/sagittarius/cosmic_star_arrow.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Limit",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Gold Saint (sagittarius)",
+            "icCost": 20,
+            "damage": "10d10",
+            "actionMacro": "cosmic_star_arrow_action",
+            "description": "<p><strong>[Cosmic Star Arrow]</strong></p><p>Flecha matadora de deuses.</p><p><strong>Custo:</strong> 20 IC</p><p><strong>Tipo:</strong> Limit</p>"
+        }
+    }
+}

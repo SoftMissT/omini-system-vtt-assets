@@ -1,0 +1,18 @@
+{
+    "name": "Dimensional Blade",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/titans/iapetus/dimensional_blade.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Iapetus (titans)",
+            "icCost": 18,
+            "damage": "8d10",
+            "actionMacro": "dimensional_blade_action",
+            "description": "<p><strong>[Dimensional Blade]</strong></p><p>Corte que sangra dimensões.</p><p><strong>Custo:</strong> 18 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Zodiac Clamation",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/leo/zodiac_clamation.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Suicide",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Gold Saint (leo)",
+            "icCost": 100,
+            "damage": "100d10",
+            "actionMacro": "zodiac_clamation_action",
+            "description": "<p><strong>[Zodiac Clamation]</strong></p><p>Ataque final suicida.</p><p><strong>Custo:</strong> 100 IC</p><p><strong>Tipo:</strong> Suicide</p>"
+        }
+    }
+}

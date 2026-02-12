@@ -1,0 +1,18 @@
+{
+    "name": "Telesphoreus",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/primordials/chronos/telesphoreus.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Reaction",
+            "rarity": "primordial",
+            "tier": 12,
+            "source": "Chronos (primordials)",
+            "icCost": 0,
+            "damage": "-",
+            "actionMacro": "telesphoreus_action",
+            "description": "<p><strong>[Telesphoreus]</strong></p><p>Aprisiona o atacante em um loop temporal de morte.</p><p><strong>Custo:</strong> 0 IC</p><p><strong>Tipo:</strong> Reaction</p>"
+        }
+    }
+}

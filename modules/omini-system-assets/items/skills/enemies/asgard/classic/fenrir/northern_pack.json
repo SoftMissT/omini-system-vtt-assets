@@ -1,0 +1,18 @@
+{
+    "name": "Northern Pack",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/asgard/classic/fenrir/northern_pack.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Passive",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Fenrir (God Warrior)",
+            "icCost": 0,
+            "damage": "Summon",
+            "actionMacro": "northern_pack_action",
+            "description": "<p><strong>[Northern Pack]</strong></p><p>Alcateia de lobos (Ging). Vantagem em ataque.</p><p><strong>Custo:</strong> 0 IC</p><p><strong>Tipo:</strong> Passive</p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Hypnotherapy",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/ophiuchus/hypnotherapy.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Global",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Gold Saint (ophiuchus)",
+            "icCost": 30,
+            "damage": "-",
+            "actionMacro": "hypnotherapy_action",
+            "description": "<p><strong>[Hypnotherapy]</strong></p><p>Cura total e sono profundo.</p><p><strong>Custo:</strong> 30 IC</p><p><strong>Tipo:</strong> Global</p>"
+        }
+    }
+}

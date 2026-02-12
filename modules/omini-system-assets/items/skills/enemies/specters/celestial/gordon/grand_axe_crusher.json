@@ -1,0 +1,18 @@
+{
+    "name": "Grand Axe Crusher",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/specters/celestial/gordon/grand_axe_crusher.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Gordon (Specter)",
+            "icCost": 10,
+            "damage": "8d10 Pierce",
+            "actionMacro": "grand_axe_crusher_action",
+            "description": "<p><strong>[Grand Axe Crusher]</strong></p><p>Machadada que ignora armadura.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

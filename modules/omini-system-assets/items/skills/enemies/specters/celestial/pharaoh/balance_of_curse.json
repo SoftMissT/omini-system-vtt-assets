@@ -1,0 +1,18 @@
+{
+    "name": "Balance of Curse",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/specters/celestial/pharaoh/balance_of_curse.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Pharaoh (Specter)",
+            "icCost": 20,
+            "damage": "Death/Psy",
+            "actionMacro": "balance_of_curse_action",
+            "description": "<p><strong>[Balance of Curse]</strong></p><p>Balança da verdade. Morte aos mentirosos.</p><p><strong>Custo:</strong> 20 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

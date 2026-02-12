@@ -1,0 +1,18 @@
+{
+    "name": "Another Dimension",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/gemini/another_dimension.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Gold Saint (gemini)",
+            "icCost": 15,
+            "damage": "3d6",
+            "actionMacro": "another_dimension_action",
+            "description": "<p><strong>[Another Dimension]</strong></p><p>Bane o alvo para o vácuo.</p><p><strong>Custo:</strong> 15 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

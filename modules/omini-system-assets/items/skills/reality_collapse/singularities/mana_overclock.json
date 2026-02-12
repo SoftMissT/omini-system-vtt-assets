@@ -1,0 +1,18 @@
+{
+    "name": "Mana Overclock",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/reality_collapse/singularities/mana_overclock.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Buff",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Academy Honor (singularities)",
+            "icCost": 10,
+            "damage": "+300% Dmg",
+            "actionMacro": "mana_overclock_action",
+            "description": "<p><strong>[Mana Overclock]</strong></p><p>Potencializa feitiços sem custo.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Buff</p>"
+        }
+    }
+}

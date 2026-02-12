@@ -1,0 +1,18 @@
+{
+    "name": "Great Horn",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/taurus/great_horn.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 7,
+            "source": "Gold Saint (taurus)",
+            "icCost": 10,
+            "damage": "8d10 + @atk",
+            "actionMacro": "great_horn_action",
+            "description": "<p><strong>[Great Horn]</strong></p><p>Ataque veloz de postura Iai.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

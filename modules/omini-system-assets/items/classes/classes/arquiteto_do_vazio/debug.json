@@ -1,0 +1,18 @@
+{
+    "name": "Debug",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/classes/classes/arquiteto_do_vazio/debug.webp",
+    "system": {
+        "props": {
+            "itemType": "feature",
+            "classSource": "Arquiteto do Vazio",
+            "skillType": "Active",
+            "rarity": "glitch",
+            "tier": 10,
+            "icCost": 0,
+            "effect": "Reveal Weakness",
+            "actionMacro": "debug_action",
+            "description": "<p><strong>[Debug]</strong></p><p>Analisa o código do inimigo. Revela resistências e reduz eficácia.</p><p><strong>Custo:</strong> 0</p>"
+        }
+    }
+}

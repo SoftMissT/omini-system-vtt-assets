@@ -1,0 +1,18 @@
+{
+    "name": "Rozan Shinbu Ken",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/libra/rozan_shinbu_ken.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "rare",
+            "tier": 6,
+            "source": "Gold Saint (libra)",
+            "icCost": 10,
+            "damage": "-",
+            "actionMacro": "rozan_shinbu_ken_action",
+            "description": "<p><strong>[Rozan Shinbu Ken]</strong></p><p>Ataque que ignora armadura.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

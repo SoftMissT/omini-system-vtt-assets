@@ -1,0 +1,18 @@
+{
+    "name": "Flashing Lancer",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/marinas/general/krishna/flashing_lancer.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Krishna (Marina)",
+            "icCost": 6,
+            "damage": "1d12+8 Cut",
+            "actionMacro": "flashing_lancer_action",
+            "description": "<p><strong>[Flashing Lancer]</strong></p><p>Lança Relâmpago. Corte atômico.</p><p><strong>Custo:</strong> 6 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

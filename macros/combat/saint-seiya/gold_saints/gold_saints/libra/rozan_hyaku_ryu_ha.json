@@ -1,0 +1,18 @@
+{
+    "name": "Rozan Hyaku Ryu Ha",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/gold_saints/libra/rozan_hyaku_ryu_ha.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "epic",
+            "tier": 8,
+            "source": "Gold Saint (libra)",
+            "icCost": 18,
+            "damage": "10d6 + @atk",
+            "actionMacro": "rozan_hyaku_ryu_ha_action",
+            "description": "<p><strong>[Rozan Hyaku Ryu Ha]</strong></p><p>Cólera dos 100 Dragões.</p><p><strong>Custo:</strong> 18 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}

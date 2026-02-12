@@ -1,0 +1,18 @@
+{
+    "name": "Element Rejection",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/pallasites/2nd_class/miller/element_rejection.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Reaction",
+            "rarity": "epic",
+            "tier": 9,
+            "source": "Miller (pallasites)",
+            "icCost": 10,
+            "damage": "Break Wpn",
+            "actionMacro": "element_rejection_action",
+            "description": "<p><strong>[Element Rejection]</strong></p><p>Luva de alquimia que quebra armas.</p><p><strong>Custo:</strong> 10 IC</p><p><strong>Tipo:</strong> Reaction</p>"
+        }
+    }
+}

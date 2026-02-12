@@ -1,0 +1,18 @@
+{
+    "name": "Gigantic Feathers Flap",
+    "type": "item",
+    "img": "modules/omini-system-assets/assets/icons/skills/enemies/specters/judges/minos/gigantic_feathers_flap.webp",
+    "system": {
+        "props": {
+            "itemType": "skill",
+            "skillType": "Action",
+            "rarity": "mythic",
+            "tier": 10,
+            "source": "Minos (Specter)",
+            "icCost": 18,
+            "damage": "8d8 Wind",
+            "actionMacro": "gigantic_feathers_flap_action",
+            "description": "<p><strong>[Gigantic Feathers Flap]</strong></p><p>Furacão de penas negras e roxas.</p><p><strong>Custo:</strong> 18 IC</p><p><strong>Tipo:</strong> Action</p>"
+        }
+    }
+}
