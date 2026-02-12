@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node scripts/utils/update-omni-db.js:*)"
+      "Bash(node scripts/utils/update-omni-db.js:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)"
     ]
   }
 }
