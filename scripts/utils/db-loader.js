@@ -10,14 +10,13 @@ export class OmniDbLoader {
      */
     static async load() {
         console.log("🌌 OMNI-SYSTEM | Iniciando carga de base de dados...");
-        
+
         if (game.user.isGM) {
             await this.seedMacros();
-            await this.seedItems();
-            await this.seedSkills();
+            await this.seedCompendiumsByCategory();
             await this.checkAssets();
         }
-        
+
         console.log("🌌 OMNI-SYSTEM | Base de dados carregada.");
     }
 
@@ -63,48 +62,90 @@ export class OmniDbLoader {
     }
 
     /**
-     * Seeds the 'omini-items' compendium.
+     * Seeds all item compendiums by category.
      */
-    static async seedItems() {
-        const pack = game.packs.get("omini-system-vtt.omini-items");
-        if (!pack) return;
-        await pack.getIndex();
+    static async seedCompendiumsByCategory() {
+        const categories = {
+            'weapons': 'omini-weapons',
+            'armors': 'omini-armors',
+            'accessories': 'omini-accessories',
+            'consumables': 'omini-consumables',
+            'skills': 'omini-skills',
+            'classes': 'omini-classes',
+            'pets': 'omini-pets',
+            'mounts': 'omini-mounts',
+            'summons': 'omini-summons',
+            'materials': 'omini-materials',
+            'housing': 'omini-housing',
+            'backgrounds': 'omini-backgrounds'
+        };
 
-        const itemsToSeed = [...OMNI_DB.weapons, ...OMNI_DB.materials, ...OMNI_DB.shop];
+        for (const [category, packName] of Object.entries(categories)) {
+            await this.seedCategoryCompendium(category, packName);
+        }
+
+        // Seed NPCs separately (Actor type)
+        await this.seedNPCCompendium();
+    }
+
+    /**
+     * Seeds a specific category compendium.
+     */
+    static async seedCategoryCompendium(category, packName) {
+        const pack = game.packs.get(`omini-system-vtt.${packName}`);
+        if (!pack) {
+            console.warn(`⚠️ Compendium não encontrado: ${packName}`);
+            return;
+        }
+
+        await pack.getIndex();
+        const itemsToSeed = OMNI_DB[category] || [];
+
+        if (itemsToSeed.length === 0) {
+            console.log(`📦 ${category}: nenhum item para popular`);
+            return;
+        }
 
         for (const itemData of itemsToSeed) {
             const existing = pack.index.find(i => i.name === itemData.name);
             if (!existing) {
-                console.log(`✨ Semeando item: ${itemData.name}`);
+                console.log(`✨ Semeando ${category}: ${itemData.name}`);
                 await Item.create(itemData, { pack: pack.collection });
             }
         }
     }
 
     /**
-     * Seeds the 'omini-skills' compendium.
+     * Seeds the NPCs compendium (Actor type).
      */
-    static async seedSkills() {
-        const pack = game.packs.get("omini-system-vtt.omini-skills");
-        if (!pack) return;
-        await pack.getIndex();
+    static async seedNPCCompendium() {
+        const pack = game.packs.get("omini-system-vtt.omini-npcs");
+        if (!pack) {
+            console.warn("⚠️ Compendium não encontrado: omini-npcs");
+            return;
+        }
 
-        for (const skillData of OMNI_DB.skills) {
-            const existing = pack.index.find(i => i.name === skillData.name);
+        await pack.getIndex();
+        const npcsToSeed = OMNI_DB.npcs || [];
+
+        if (npcsToSeed.length === 0) {
+            console.log("📦 npcs: nenhum item para popular");
+            return;
+        }
+
+        for (const npcData of npcsToSeed) {
+            const existing = pack.index.find(n => n.name === npcData.name);
             if (!existing) {
-                console.log(`✨ Semeando skill: ${skillData.name}`);
-                await Item.create(skillData, { pack: pack.collection });
+                console.log(`✨ Semeando NPC: ${npcData.name}`);
+                await Actor.create(npcData, { pack: pack.collection });
             }
         }
     }
 
     /**
-     * Verifies that the assets module is active.
+     * Verifies that the module is active.
      */
     static async checkAssets() {
-        const assetsModule = game.modules.get("omini-system-assets");
-        if (!assetsModule?.active) {
-            ui.notifications.error("⚠️ Módulo 'omini-system-assets' NÃO ENCONTRADO ou INATIVO.");
-        }
+        console.log("✅ Módulo OMINI-SYSTEM carregado com sucesso!");
     }
 }

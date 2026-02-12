@@ -2,7 +2,7 @@
   "id": "omini-system-vtt",
   "title": "Omini System VTT",
   "description": "Sistema de animes 100% gratuito focado em mundos como SAO e Manhwas. Criado por SoftMissT com apoio de IAs (Claude, Gemini, Midjourney, Obsidian, ChatGPT, Manus AI).",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "SoftMissT"
@@ -26,23 +26,106 @@
   "packs": [
     {
       "name": "omini-macros",
-      "label": "Omini Anime Macros",
+      "label": "Omini - Macros",
       "path": "packs/omini-macros",
       "type": "Macro"
     },
     {
-      "name": "omini-skills",
-      "label": "Omini Anime Skills",
-      "path": "packs/omini-skills",
+      "name": "omini-weapons",
+      "label": "Omini - Armas",
+      "path": "packs/weapons",
       "type": "Item",
       "system": "custom-system-builder"
     },
     {
-      "name": "omini-items",
-      "label": "Omini Anime Items",
-      "path": "packs/omini-items",
+      "name": "omini-armors",
+      "label": "Omini - Armaduras",
+      "path": "packs/armors",
       "type": "Item",
       "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-accessories",
+      "label": "Omini - Acessórios",
+      "path": "packs/accessories",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-consumables",
+      "label": "Omini - Consumíveis",
+      "path": "packs/consumables",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-skills",
+      "label": "Omini - Habilidades",
+      "path": "packs/skills",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-classes",
+      "label": "Omini - Classes",
+      "path": "packs/classes",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-pets",
+      "label": "Omini - Pets & Familiares",
+      "path": "packs/pets",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-mounts",
+      "label": "Omini - Montarias",
+      "path": "packs/mounts",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-summons",
+      "label": "Omini - Invocações",
+      "path": "packs/summons",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-materials",
+      "label": "Omini - Materiais",
+      "path": "packs/materials",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-housing",
+      "label": "Omini - Habitação",
+      "path": "packs/housing",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-npcs",
+      "label": "Omini - NPCs",
+      "path": "packs/npcs",
+      "type": "Actor",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-backgrounds",
+      "label": "Omini - Backgrounds",
+      "path": "packs/backgrounds",
+      "type": "Item",
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "omini-maps",
+      "label": "Omini - Mapas",
+      "path": "packs/maps",
+      "type": "Scene"
     }
   ],
   "esmodules": [
