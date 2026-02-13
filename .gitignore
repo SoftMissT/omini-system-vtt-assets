@@ -33,3 +33,5 @@ ICON REQUIREMENT ANALYZER - BLUEPRINT.md
 macros 2/
 .claude
 deploy_omni.sh
+deploy_omni 
+.claude
